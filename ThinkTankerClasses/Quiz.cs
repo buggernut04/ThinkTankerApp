@@ -25,14 +25,14 @@ namespace ThinkTankerClasses
 
         public void ImportQuestions()
         {
-            if (this.QuizType == QuizType.Easy)
+           /* if (this.QuizType == QuizType.Easy)
                 importQuestionHelper("easy.csv");
             else if (this.QuizType == QuizType.Moderate)
                 importQuestionHelper("moderate.csv");
             else if (this.QuizType == QuizType.Difficult)
                 importQuestionHelper("difficult.csv");
 
-            randomizeContents();
+            randomizeContents();*/
         }
 
         private void randomizeContents()
@@ -64,7 +64,7 @@ namespace ThinkTankerClasses
         {
             //read the made easy.csv file and import the data in the Items
             //Sample
-            var desc = new CsvFileDescription
+           /* var desc = new CsvFileDescription
             {
                 FirstLineHasColumnNames = true,
                 SeparatorChar = ','
@@ -74,7 +74,7 @@ namespace ThinkTankerClasses
             var items = context.Read<List<TestItem>>(fileName, desc);
 
             foreach (var item in items)
-                this.Items = item;
+                this.Items = item;*/
         }
 
     }
