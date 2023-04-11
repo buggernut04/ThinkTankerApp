@@ -38,7 +38,7 @@
             textBox1.Dock = DockStyle.Fill;
             textBox1.Location = new Point(10, 7);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(230, 22);
+            textBox1.Size = new Size(230, 17);
             textBox1.TabIndex = 0;
             textBox1.Click += textBox1_Click;
             textBox1.TextChanged += textBox1_TextChanged;
