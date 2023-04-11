@@ -72,9 +72,9 @@ namespace ThinkTankerClasses
 
             var context = new LINQtoCSV.CsvContext();
             var items = context.Read<List<TestItem>>(fileName, desc);
-
+/*
             foreach (var item in items)
-                this.Items = item;
+                this.Items = item;*/
         }
 
     }
