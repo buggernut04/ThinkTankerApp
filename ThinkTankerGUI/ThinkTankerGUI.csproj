@@ -19,6 +19,9 @@
 
   <ItemGroup>
     <Folder Include="Custom Properties\" />
+    <Folder Include="LogIn\" />
+    <Folder Include="MainMenu\" />
+    <Folder Include="SignUpForm\" />
   </ItemGroup>
 
   <ItemGroup>
