@@ -1,4 +1,5 @@
-using Study_Application.Forms;
+﻿using ThinkTankerGUI.Minigame;
+using ThinkTankerGUI.LogInForm;
 
 namespace ThinkTankerGUI
 {
@@ -14,6 +15,8 @@ namespace ThinkTankerGUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new minigame_towerofhanoi());
+            Application.Run(new Form1());
+
         }
     }
 }

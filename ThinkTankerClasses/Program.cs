@@ -1,9 +1,12 @@
-﻿namespace ThinkTankerClasses
+﻿
+
+namespace ThinkTankerApp
 {
     public class Program
     {
         static void Main(string[] args)
         {
+
             Quiz q = new Quiz(QuizType.Easy);
             q.ImportQuestions();
 
@@ -11,6 +14,8 @@
             {
                 Console.WriteLine(qu.ToString());
             }
+
+            Console.WriteLine("hello!");
         }
     }
 }

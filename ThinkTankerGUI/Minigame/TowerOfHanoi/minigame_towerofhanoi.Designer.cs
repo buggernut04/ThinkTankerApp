@@ -1,4 +1,4 @@
-﻿namespace Study_Application.Forms
+﻿namespace ThinkTankerGUI.Minigame
 {
     partial class minigame_towerofhanoi
     {
