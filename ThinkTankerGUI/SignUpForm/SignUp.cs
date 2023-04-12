@@ -29,7 +29,6 @@ namespace ThinkTankerGUI.SignUpForm
 
         private void passwordLabel__userInput(object sender, EventArgs e)
         {
-            if(User)
         }
     }
 }

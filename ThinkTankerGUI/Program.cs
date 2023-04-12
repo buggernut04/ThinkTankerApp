@@ -20,9 +20,9 @@ namespace ThinkTankerGUI
             ProjectDatabase.LoadUserRecord();
             //Application.Run(new LogIn());
 
-            Application.Run(new SignUp());
+            //Application.Run(new SignUp());
 
-
+            Application.Run(new TowerOfHanoiBT());
         }
     }
 }
