@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThinkTankerApp
+namespace ThinkTankerClasses
 {
     public class TestItem
     {
@@ -12,8 +12,8 @@ namespace ThinkTankerApp
         public string CorrectAnswer { get; private set; }
         public TestItem(string question, string correctAnswer)
         {
-            this.Question = question;
-            this.CorrectAnswer = correctAnswer;
+            Question = question;
+            CorrectAnswer = correctAnswer;
         }
 
         public static implicit operator int(TestItem v)

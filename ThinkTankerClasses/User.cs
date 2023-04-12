@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThinkTankerApp
+namespace ThinkTankerClasses
 {
     [Serializable]
     public class User
@@ -18,11 +18,11 @@ namespace ThinkTankerApp
         //constructor
         public User(string name, DateTime birthdate, char sex, string username, string password)
         {
-            this.Name = name;
-            this.BirthDate = birthdate;
-            this.Sex = sex;
-            this.Username = username;
-            this.Password = password;
+            Name = name;
+            BirthDate = birthdate;
+            Sex = sex;
+            Username = username;
+            Password = password;
         }
         public bool CanLogIn(string username, string password)
         {

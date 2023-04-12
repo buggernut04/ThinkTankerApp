@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThinkTankerApp
+namespace ThinkTankerClasses
 {
     public class Quiz
     {
@@ -14,8 +14,8 @@ namespace ThinkTankerApp
 
         public Quiz(QuizType quizType)
         {
-            this.Items = new List<TestItem>();
-            this.QuizType = quizType;
+            Items = new List<TestItem>();
+            QuizType = quizType;
 
             //sup
         }
