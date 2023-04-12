@@ -1,11 +1,11 @@
-﻿using LINQtoCSV;
+﻿using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThinkTankerClasses
+namespace ThinkTankerApp
 {
     public class Quiz
     {
@@ -17,6 +17,7 @@ namespace ThinkTankerClasses
             this.Items = new List<TestItem>();
             this.QuizType = quizType;
 
+            //sup
         }
         public bool IsChecked(TestItem item, string ans)
         {
@@ -25,7 +26,7 @@ namespace ThinkTankerClasses
 
         public void ImportQuestions()
         {
-           /* if (this.QuizType == QuizType.Easy)
+            /*if (this.QuizType == QuizType.Easy)
                 importQuestionHelper("easy.csv");
             else if (this.QuizType == QuizType.Moderate)
                 importQuestionHelper("moderate.csv");
@@ -60,22 +61,27 @@ namespace ThinkTankerClasses
             }
         }
 
-        private void importQuestionHelper(string fileName)
+        /*private void importQuestionHelper(string fileName)
         {
-            //read the made easy.csv file and import the data in the Items
-            //Sample
-           /* var desc = new CsvFileDescription
+            using (TextFieldParser parser = new TextFieldParser(fileName))
             {
-                FirstLineHasColumnNames = true,
-                SeparatorChar = ','
-            };
+                // Set the delimiter to a comma
+                parser.TextFieldType = FieldType.Delimited;
+                parser.SetDelimiters(".");
 
-            var context = new LINQtoCSV.CsvContext();
-            var items = context.Read<List<TestItem>>(fileName, desc);
-/*
-            foreach (var item in items)
-                this.Items = item;*/
-        }
+                // Read the data line by line
+                while (!parser.EndOfData)
+                {
+                    // Read the fields in the current line
+                    string[] fields = parser.ReadFields();
+
+                    TestItem item = new TestItem(fields[0], fields[1]);
+
+                    // Add the fields to the data list
+                    Items.Add(item);
+                }
+            }
+        }*/
 
     }
 }

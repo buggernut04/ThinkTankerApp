@@ -5,7 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Study_Application.Forms.MiniGames.TowerOfHanoi
+namespace ThinkTankerGUI.Minigame.TowerOfHanoi
 {
     public class GeneralControl
     {
