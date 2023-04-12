@@ -17,6 +17,7 @@ namespace ThinkTankerApp
             this.Items = new List<TestItem>();
             this.QuizType = quizType;
 
+            //sup
         }
         public bool IsChecked(TestItem item, string ans)
         {
