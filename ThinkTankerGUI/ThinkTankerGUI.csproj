@@ -16,11 +16,7 @@
   <ItemGroup>
     <EmbeddedResource Remove="Form1.resx" />
   </ItemGroup>
-
-  <ItemGroup>
-	 <Folder Include="Custom Properties\" />
-  </ItemGroup>
-
+	
   <ItemGroup>
     <ProjectReference Include="..\ThinkTankerClasses\ThinkTankerClasses.csproj" />
   </ItemGroup>
