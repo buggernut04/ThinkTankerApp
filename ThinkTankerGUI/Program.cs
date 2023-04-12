@@ -1,5 +1,8 @@
 ﻿using ThinkTankerGUI.Minigame;
 using ThinkTankerGUI.LogInForm;
+using ThinkTankerClasses;
+using ThinkTankerApp;
+using ThinkTankerClasses.Databases;
 
 namespace ThinkTankerGUI
 {
@@ -14,7 +17,9 @@ namespace ThinkTankerGUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+           
             Application.Run(new LogIn());
+            
         }
     }
 }

@@ -60,6 +60,8 @@ namespace ThinkTankerGUI.LogInForm
            
             if (!canLogin)
                MessageBox.Show("Invalid Username and Password!");
+            else
+                MessageBox.Show("Logged in.");
         }
 
     }
