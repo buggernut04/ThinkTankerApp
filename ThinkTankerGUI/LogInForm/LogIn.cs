@@ -9,6 +9,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ThinkTankerClasses.Databases;
 using ThinkTankerGUI.MainMenuForm;
 using ThinkTankerGUI.SignUpForm;
 
@@ -18,11 +19,14 @@ namespace ThinkTankerGUI.LogInForm
     {
         public static MainMenu mainMenu = new();
         public static SignUp signUp = new();
+
         public LogIn()
         {
             InitializeComponent();
             this.AcceptButton = signInB;
             this.FormClosing += LogIn_FormClosing;
+
+            ProjectDatabase.LoadUserRecord();
         }
 
         private void LogIn_FormClosing(object? sender, FormClosingEventArgs e)
@@ -41,14 +45,21 @@ namespace ThinkTankerGUI.LogInForm
         }
         private void signInB_Click_1(object sender, EventArgs e)
         {
-
-            if (usernameTB.Text == "hello" && passwordTB.Text == "hello")
+            bool canLogin = false;
+            
+            foreach(var u in ProjectDatabase.UserRecord)
             {
-                LogIn.mainMenu.ShowDialog(this);
-                this.Show();
+                if (u.CanLogIn(usernameTB.Text, passwordTB.Text))
+                {
+                    LogIn.mainMenu.ShowDialog(this);
+                    this.Show();
+                    canLogin = true;
+                    break;
+                }  
             }
-            else
-                MessageBox.Show("Invalid Username and Password!");
+           
+            if (!canLogin)
+               MessageBox.Show("Invalid Username and Password!");
         }
 
     }
