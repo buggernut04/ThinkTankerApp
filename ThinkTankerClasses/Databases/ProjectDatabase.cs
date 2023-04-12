@@ -25,6 +25,9 @@ namespace ThinkTankerClasses.Databases
 
         public static void LoadUserRecord()
         {
+            if (!File.Exists(Path.Combine(rootDirectory, userListFileName)))
+                using (StreamWriter writer = new StreamWriter(Path.Combine(rootDirectory, userListFileName)));
+
             string json = File.ReadAllText(Path.Combine(rootDirectory, userListFileName));
             UserRecord = JsonConvert.DeserializeObject<List<User>>(json);
         }
@@ -37,6 +40,9 @@ namespace ThinkTankerClasses.Databases
 
         public static void LoadQuizRecord()
         {
+            if (!File.Exists(Path.Combine(rootDirectory, quizRecordFileName)))
+                using (StreamWriter writer = new StreamWriter(Path.Combine(rootDirectory, quizRecordFileName)));
+
             string json = File.ReadAllText(Path.Combine(rootDirectory, quizRecordFileName));
             QuizRecord = Newtonsoft.Json.JsonConvert.DeserializeObject<List<QuizUserRecord>>(json);
         }

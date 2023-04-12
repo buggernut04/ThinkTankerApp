@@ -18,7 +18,9 @@ namespace ThinkTankerGUI
             ApplicationConfiguration.Initialize();
 
             ProjectDatabase.LoadUserRecord();
-            //Application.Run(new LogIn());
+            ProjectDatabase.LoadQuizRecord();
+
+            Application.Run(new LogIn());
 
             //Application.Run(new SignUp());
 

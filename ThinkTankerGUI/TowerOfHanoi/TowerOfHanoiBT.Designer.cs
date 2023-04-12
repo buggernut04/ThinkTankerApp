@@ -62,8 +62,9 @@
             gradientCus1.Dock = DockStyle.Top;
             gradientCus1.ForeColor = Color.FromArgb(251, 133, 0);
             gradientCus1.Location = new Point(0, 0);
+            gradientCus1.Margin = new Padding(3, 4, 3, 4);
             gradientCus1.Name = "gradientCus1";
-            gradientCus1.Size = new Size(255, 452);
+            gradientCus1.Size = new Size(291, 603);
             gradientCus1.TabIndex = 1;
             gradientCus1.TopColor = Color.FromArgb(245, 47, 87);
             // 
@@ -78,9 +79,10 @@
             BrainTeasersB.FlatStyle = FlatStyle.Flat;
             BrainTeasersB.Font = new Font("Impact", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
             BrainTeasersB.ForeColor = Color.FromArgb(251, 133, 0);
-            BrainTeasersB.Location = new Point(14, 144);
+            BrainTeasersB.Location = new Point(16, 192);
+            BrainTeasersB.Margin = new Padding(3, 4, 3, 4);
             BrainTeasersB.Name = "BrainTeasersB";
-            BrainTeasersB.Size = new Size(226, 46);
+            BrainTeasersB.Size = new Size(258, 61);
             BrainTeasersB.TabIndex = 1;
             BrainTeasersB.Text = "Back";
             BrainTeasersB.TextColor = Color.FromArgb(251, 133, 0);
@@ -93,9 +95,9 @@
             usernameLB.BackColor = Color.Transparent;
             usernameLB.Font = new Font("Cascadia Code SemiBold", 23F, FontStyle.Regular, GraphicsUnit.Point);
             usernameLB.ForeColor = Color.FromArgb(255, 247, 237);
-            usernameLB.Location = new Point(68, 22);
+            usernameLB.Location = new Point(78, 29);
             usernameLB.Name = "usernameLB";
-            usernameLB.Size = new Size(216, 41);
+            usernameLB.Size = new Size(275, 51);
             usernameLB.TabIndex = 1;
             usernameLB.Text = "Loren Ipsum";
             // 
@@ -108,9 +110,10 @@
             pictureboxCus1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             pictureboxCus1.BorderSize = 0;
             pictureboxCus1.GradientAngle = 50F;
-            pictureboxCus1.Location = new Point(12, 13);
+            pictureboxCus1.Location = new Point(14, 17);
+            pictureboxCus1.Margin = new Padding(3, 4, 3, 4);
             pictureboxCus1.Name = "pictureboxCus1";
-            pictureboxCus1.Size = new Size(50, 50);
+            pictureboxCus1.Size = new Size(57, 57);
             pictureboxCus1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureboxCus1.TabIndex = 0;
             pictureboxCus1.TabStop = false;
@@ -120,80 +123,86 @@
             panel1.BackColor = Color.FromArgb(251, 133, 0);
             panel1.Controls.Add(gradientCus1);
             panel1.Location = new Point(0, -1);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(255, 452);
+            panel1.Size = new Size(291, 603);
             panel1.TabIndex = 0;
             // 
             // Pole1
             // 
             Pole1.BackColor = Color.Chocolate;
-            Pole1.Location = new Point(370, 276);
+            Pole1.Location = new Point(423, 368);
+            Pole1.Margin = new Padding(3, 4, 3, 4);
             Pole1.Name = "Pole1";
-            Pole1.Size = new Size(10, 106);
+            Pole1.Size = new Size(11, 141);
             Pole1.TabIndex = 1;
             Pole1.TabStop = false;
             // 
             // Pole2
             // 
             Pole2.BackColor = Color.Chocolate;
-            Pole2.Location = new Point(520, 276);
+            Pole2.Location = new Point(594, 368);
+            Pole2.Margin = new Padding(3, 4, 3, 4);
             Pole2.Name = "Pole2";
-            Pole2.Size = new Size(10, 106);
+            Pole2.Size = new Size(11, 141);
             Pole2.TabIndex = 2;
             Pole2.TabStop = false;
             // 
             // Pole3
             // 
             Pole3.BackColor = Color.Chocolate;
-            Pole3.Location = new Point(681, 276);
+            Pole3.Location = new Point(778, 368);
+            Pole3.Margin = new Padding(3, 4, 3, 4);
             Pole3.Name = "Pole3";
-            Pole3.Size = new Size(10, 106);
+            Pole3.Size = new Size(11, 141);
             Pole3.TabIndex = 3;
             Pole3.TabStop = false;
             // 
             // Disk3
             // 
-            Disk3.BackColor = Color.Red;
-            Disk3.Location = new Point(341, 325);
-            Disk3.Name = "Disk3";
-            Disk3.Size = new Size(69, 20);
-            Disk3.TabIndex = 4;
-            Disk3.TabStop = false;
-            Disk3.Tag = "Disk";
+            Disk1.BackColor = Color.Red;
+            Disk1.Location = new Point(385, 482);
+            Disk1.Margin = new Padding(3, 4, 3, 4);
+            Disk1.Name = "Disk1";
+            Disk1.Size = new Size(79, 27);
+            Disk1.TabIndex = 4;
+            Disk1.TabStop = false;
+            Disk1.Tag = "Disk";
             // 
             // Disk2
             // 
             Disk2.BackColor = Color.Cyan;
-            Disk2.Location = new Point(327, 343);
+            Disk2.Location = new Point(751, 482);
+            Disk2.Margin = new Padding(3, 4, 3, 4);
             Disk2.Name = "Disk2";
-            Disk2.Size = new Size(95, 20);
+            Disk2.Size = new Size(109, 27);
             Disk2.TabIndex = 5;
             Disk2.TabStop = false;
             Disk2.Tag = "Disk";
             // 
             // Disk1
             // 
-            Disk1.BackColor = Color.Yellow;
-            Disk1.Location = new Point(315, 362);
-            Disk1.Name = "Disk1";
-            Disk1.Size = new Size(121, 20);
-            Disk1.TabIndex = 6;
-            Disk1.TabStop = false;
-            Disk1.Tag = "Disk";
+            Disk3.BackColor = Color.Yellow;
+            Disk3.Location = new Point(536, 482);
+            Disk3.Margin = new Padding(3, 4, 3, 4);
+            Disk3.Name = "Disk3";
+            Disk3.Size = new Size(138, 27);
+            Disk3.TabIndex = 6;
+            Disk3.TabStop = false;
+            Disk3.Tag = "Disk";
             // 
             // TowerOfHanoiBT
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(2, 48, 71);
-            ClientSize = new Size(800, 450);
-            Controls.Add(Disk1);
-            Controls.Add(Disk2);
+            ClientSize = new Size(914, 600);
             Controls.Add(Disk3);
             Controls.Add(Pole3);
             Controls.Add(Pole2);
             Controls.Add(Pole1);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "TowerOfHanoiBT";
             Text = "TowerOfHanoi";
             Load += TowerOfHanoiBT_Load;
