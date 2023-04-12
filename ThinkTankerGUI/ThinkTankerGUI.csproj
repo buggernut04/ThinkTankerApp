@@ -9,6 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="LogIn\**" />
+    <Compile Remove="MainMenu\**" />
+    <Compile Remove="SignUpForm\**" />
+    <EmbeddedResource Remove="LogIn\**" />
+    <EmbeddedResource Remove="MainMenu\**" />
+    <EmbeddedResource Remove="SignUpForm\**" />
+    <None Remove="LogIn\**" />
+    <None Remove="MainMenu\**" />
+    <None Remove="SignUpForm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Form1.cs" />
     <Compile Remove="Form1.Designer.cs" />
   </ItemGroup>
@@ -19,9 +31,6 @@
 
   <ItemGroup>
     <Folder Include="Custom Properties\" />
-    <Folder Include="LogIn\" />
-    <Folder Include="MainMenu\" />
-    <Folder Include="SignUpForm\" />
   </ItemGroup>
 
   <ItemGroup>
