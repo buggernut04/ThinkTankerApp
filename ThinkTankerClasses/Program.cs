@@ -1,6 +1,4 @@
-﻿
-
-namespace ThinkTankerApp
+﻿namespace ThinkTankerApp
 {
     public class Program
     {
