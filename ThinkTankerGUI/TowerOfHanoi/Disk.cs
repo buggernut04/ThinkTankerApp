@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,12 +17,16 @@ namespace ThinkTankerGUI.TowerOfHanoi
         public Disk(int priority)
         {
             this.Priority = priority;
-            this.PictureBox = new PictureBox();
-            this.PictureBox.BackColor = colors[counter++];
-            this.PictureBox.Size = new Size(70 + (this.Priority * 25), 20);
-            this.PictureBox.Tag = this;
         }
 
+        public void SetPictureBox(PictureBox pb)
+        {
+            this.PictureBox = pb;
+            this.PictureBox.BackColor = colors[counter++];
+            this.PictureBox.Size = new Size(70 + (this.Priority * 25), 20);
+            this.PictureBox.Location = new Point(this.PictureBox.Location.X, this.PictureBox.Location.Y);
+            this.PictureBox.Tag = this;
+        }
 
     }
 }

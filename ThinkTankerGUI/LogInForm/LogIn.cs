@@ -25,8 +25,6 @@ namespace ThinkTankerGUI.LogInForm
             InitializeComponent();
             this.AcceptButton = signInB;
             this.FormClosing += LogIn_FormClosing;
-
-            ProjectDatabase.LoadUserRecord();
         }
 
         private void LogIn_FormClosing(object? sender, FormClosingEventArgs e)

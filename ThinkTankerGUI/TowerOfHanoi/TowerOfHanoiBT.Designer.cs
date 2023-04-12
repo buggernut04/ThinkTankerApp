@@ -36,18 +36,18 @@
             Pole1 = new PictureBox();
             Pole2 = new PictureBox();
             Pole3 = new PictureBox();
-            Disk1 = new PictureBox();
-            Disk2 = new PictureBox();
             Disk3 = new PictureBox();
+            Disk2 = new PictureBox();
+            Disk1 = new PictureBox();
             gradientCus1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureboxCus1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Pole1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Pole2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Pole3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Disk1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Disk2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Disk3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Disk2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Disk1).BeginInit();
             SuspendLayout();
             // 
             // gradientCus1
@@ -151,51 +151,52 @@
             Pole3.TabIndex = 3;
             Pole3.TabStop = false;
             // 
-            // Disk1
+            // Disk3
             // 
-            Disk1.BackColor = Color.Red;
-            Disk1.Location = new Point(341, 325);
-            Disk1.Name = "Disk1";
-            Disk1.Size = new Size(69, 20);
-            Disk1.TabIndex = 4;
-            Disk1.TabStop = false;
-            Disk1.Tag = "Disk";
+            Disk3.BackColor = Color.Red;
+            Disk3.Location = new Point(341, 325);
+            Disk3.Name = "Disk3";
+            Disk3.Size = new Size(69, 20);
+            Disk3.TabIndex = 4;
+            Disk3.TabStop = false;
+            Disk3.Tag = "Disk";
             // 
             // Disk2
             // 
             Disk2.BackColor = Color.Cyan;
-            Disk2.Location = new Point(328, 343);
+            Disk2.Location = new Point(327, 343);
             Disk2.Name = "Disk2";
             Disk2.Size = new Size(95, 20);
             Disk2.TabIndex = 5;
             Disk2.TabStop = false;
             Disk2.Tag = "Disk";
             // 
-            // Disk3
+            // Disk1
             // 
-            Disk3.BackColor = Color.Yellow;
-            Disk3.Location = new Point(316, 362);
-            Disk3.Name = "Disk3";
-            Disk3.Size = new Size(121, 20);
-            Disk3.TabIndex = 6;
-            Disk3.TabStop = false;
-            Disk3.Tag = "Disk";
+            Disk1.BackColor = Color.Yellow;
+            Disk1.Location = new Point(315, 362);
+            Disk1.Name = "Disk1";
+            Disk1.Size = new Size(121, 20);
+            Disk1.TabIndex = 6;
+            Disk1.TabStop = false;
+            Disk1.Tag = "Disk";
             // 
-            // TowerOfHanoi
+            // TowerOfHanoiBT
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(2, 48, 71);
             ClientSize = new Size(800, 450);
-            Controls.Add(Disk3);
-            Controls.Add(Disk2);
             Controls.Add(Disk1);
+            Controls.Add(Disk2);
+            Controls.Add(Disk3);
             Controls.Add(Pole3);
             Controls.Add(Pole2);
             Controls.Add(Pole1);
             Controls.Add(panel1);
-            Name = "TowerOfHanoi";
+            Name = "TowerOfHanoiBT";
             Text = "TowerOfHanoi";
+            Load += TowerOfHanoiBT_Load;
             gradientCus1.ResumeLayout(false);
             gradientCus1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureboxCus1).EndInit();
@@ -203,11 +204,12 @@
             ((System.ComponentModel.ISupportInitialize)Pole1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Pole2).EndInit();
             ((System.ComponentModel.ISupportInitialize)Pole3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Disk1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Disk2).EndInit();
             ((System.ComponentModel.ISupportInitialize)Disk3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Disk2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Disk1).EndInit();
             ResumeLayout(false);
         }
+
 
         #endregion
 
@@ -219,8 +221,8 @@
         private PictureBox Pole1;
         private PictureBox Pole2;
         private PictureBox Pole3;
-        private PictureBox Disk1;
-        private PictureBox Disk2;
         private PictureBox Disk3;
+        private PictureBox Disk2;
+        private PictureBox Disk1;
     }
 }

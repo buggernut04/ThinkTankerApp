@@ -79,7 +79,7 @@
             textBoxCus1.PasswordChar = false;
             textBoxCus1.PlaceholderColor = Color.DarkGray;
             textBoxCus1.PlaceholderText = "Username";
-            textBoxCus1.Size = new Size(500, 32);
+            textBoxCus1.Size = new Size(500, 36);
             textBoxCus1.TabIndex = 1;
             textBoxCus1.UnderlinedStyle = true;
             // 
@@ -99,9 +99,10 @@
             textBoxCus2.PasswordChar = false;
             textBoxCus2.PlaceholderColor = Color.DarkGray;
             textBoxCus2.PlaceholderText = "Password";
-            textBoxCus2.Size = new Size(500, 32);
+            textBoxCus2.Size = new Size(500, 36);
             textBoxCus2.TabIndex = 2;
             textBoxCus2.UnderlinedStyle = true;
+            textBoxCus2._TextChanged += passwordLabel__userInput;
             // 
             // textBoxCus3
             // 
@@ -119,7 +120,7 @@
             textBoxCus3.PasswordChar = false;
             textBoxCus3.PlaceholderColor = Color.DarkGray;
             textBoxCus3.PlaceholderText = "Confirm Password";
-            textBoxCus3.Size = new Size(500, 32);
+            textBoxCus3.Size = new Size(500, 36);
             textBoxCus3.TabIndex = 3;
             textBoxCus3.UnderlinedStyle = true;
             // 
@@ -158,7 +159,7 @@
             nameTB.PasswordChar = false;
             nameTB.PlaceholderColor = Color.DarkGray;
             nameTB.PlaceholderText = "Name";
-            nameTB.Size = new Size(497, 32);
+            nameTB.Size = new Size(497, 36);
             nameTB.TabIndex = 5;
             nameTB.UnderlinedStyle = true;
             // 
@@ -173,7 +174,7 @@
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.Location = new Point(455, 374);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(227, 24);
+            dateTimePicker1.Size = new Size(227, 29);
             dateTimePicker1.TabIndex = 6;
             // 
             // SEX
@@ -183,7 +184,7 @@
             SEX.ForeColor = SystemColors.WindowFrame;
             SEX.FormattingEnabled = true;
             SEX.IntegralHeight = false;
-            SEX.ItemHeight = 17;
+            SEX.ItemHeight = 21;
             SEX.Items.AddRange(new object[] { "Choose", "Male", "Female" });
             SEX.Location = new Point(742, 374);
             SEX.Name = "SEX";
@@ -197,7 +198,7 @@
             label2.ForeColor = Color.Silver;
             label2.Location = new Point(461, 349);
             label2.Name = "label2";
-            label2.Size = new Size(81, 17);
+            label2.Size = new Size(97, 21);
             label2.TabIndex = 10;
             label2.Text = "Date of Birth";
             // 
@@ -208,7 +209,7 @@
             label3.ForeColor = Color.Silver;
             label3.Location = new Point(745, 348);
             label3.Name = "label3";
-            label3.Size = new Size(28, 17);
+            label3.Size = new Size(34, 21);
             label3.TabIndex = 11;
             label3.Text = "Sex";
             // 
