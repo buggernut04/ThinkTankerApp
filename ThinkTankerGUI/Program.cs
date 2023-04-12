@@ -1,6 +1,7 @@
 ﻿using ThinkTankerGUI.LogInForm;
 using ThinkTankerClasses;
 using ThinkTankerClasses.Databases;
+using ThinkTankerGUI.SignUpForm;
 
 namespace ThinkTankerGUI
 {
@@ -15,9 +16,13 @@ namespace ThinkTankerGUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            ProjectDatabase.SaveUserRecord();
-            Application.Run(new TowerOfHanoiBT());
-            
+
+            ProjectDatabase.LoadUserRecord();
+            //Application.Run(new LogIn());
+
+            Application.Run(new SignUp());
+
+
         }
     }
 }

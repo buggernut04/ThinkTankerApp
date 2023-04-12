@@ -16,6 +16,7 @@ namespace ThinkTankerGUI.SignUpForm
         {
             InitializeComponent();
 
+
         }
         private void SignUp_Load(object sender, EventArgs e)
         {
@@ -26,5 +27,9 @@ namespace ThinkTankerGUI.SignUpForm
 
         }
 
+        private void passwordLabel__userInput(object sender, EventArgs e)
+        {
+            if(User)
+        }
     }
 }
