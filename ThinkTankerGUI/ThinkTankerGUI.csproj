@@ -18,8 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Custom Properties\" />
-    <Folder Include="SignUpForm\" />
+	  <Folder Include="Custom Properties\" />
   </ItemGroup>
 
   <ItemGroup>
