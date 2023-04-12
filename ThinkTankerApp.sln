@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizClassTesting", "QuizCla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkTankerGUI", "ThinkTankerGUI\ThinkTankerGUI.csproj", "{3CCC8DEA-1CA9-4898-AFA7-6617EDAD692D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TowerOfHanoi", "TowerOfHanoi\TowerOfHanoi.csproj", "{8C83E1A2-F9A8-47C2-B036-ECF8BFF2C158}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{3CCC8DEA-1CA9-4898-AFA7-6617EDAD692D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CCC8DEA-1CA9-4898-AFA7-6617EDAD692D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CCC8DEA-1CA9-4898-AFA7-6617EDAD692D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C83E1A2-F9A8-47C2-B036-ECF8BFF2C158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C83E1A2-F9A8-47C2-B036-ECF8BFF2C158}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C83E1A2-F9A8-47C2-B036-ECF8BFF2C158}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C83E1A2-F9A8-47C2-B036-ECF8BFF2C158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace Study_Application.Forms.MiniGames.TowerOfHanoi
 {
-    public class Pole : PictureBox
+    public class Pole
     {
         public List<Disk> Disks;
-        private static Color[] colors = new Color[] { Color.Aquamarine, Color.Red, Color.Blue, Color.Indigo, Color.ForestGreen };
         public int poleNumber;
         private static int counter = 0;
         public Pole(int poleNumber)
         {
             this.Disks = new List<Disk>();
             this.poleNumber = poleNumber;
+        }
 
-            int XPosition = GameConstants.PegBaseX + ((poleNumber + 1) * GameConstants.SpaceBetweenPoles);
-            int YPosition = GameConstants.PegBaseY + this.Size.Height - this.Size.Height;
-            this.Location = new Point(XPosition, YPosition);
-            this.Size = new Size(15, 250);
-
-            this.BackColor = colors[counter++];
+        public void SetPictureBox(PictureBox pictureBox)
+        {
+            pictureBox.Tag = this;
+            pictureBox.Location = new Point(486 + (this.poleNumber * 435), 448);
+            pictureBox.Size = new Size(34, 483);
+            pictureBox.BackColor = Color.Chocolate;
         }
 
         public bool IsEmpty()
@@ -56,17 +56,16 @@ namespace Study_Application.Forms.MiniGames.TowerOfHanoi
             Disks.Remove(Disks.First());
         }
 
-        public void AddDisk(Disk disk)
+        /*public void AddDisk(Disk disk)
         {
             if (disk == null)
                 return;
-
             if (AllowDisk(disk))
             {
                 disk.MoveDisk(this);
                 Disks.Add(disk);
             }
-        }
+        }*/
 
         public override bool Equals(object obj)
         {

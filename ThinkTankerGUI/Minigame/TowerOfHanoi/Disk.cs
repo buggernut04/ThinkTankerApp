@@ -6,22 +6,25 @@ using System.Threading.Tasks;
 
 namespace Study_Application.Forms.MiniGames.TowerOfHanoi
 {
-    public class Disk : PictureBox
+    public class Disk
     {
         public int Priority { get; set; }
         private static Color[] colors = new Color[] { Color.Aquamarine, Color.Red, Color.Blue, Color.Indigo, Color.ForestGreen };
         private static int counter = 0;
+        public Move Move { get; set; }
         public Disk(int prio)
         {
             this.Priority = prio;
-            this.BackColor = colors[counter++];
-            this.Size = new Size((prio * 500) + 500, 40);
         }
 
-        public void MoveDisk(Pole targetPole)
+
+        public void SetPictureBox(PictureBox pictureBox)
         {
-            this.Location = new Point(targetPole.Location.X, targetPole.Location.Y - targetPole.Disks.Count * this.Height);
+            pictureBox.Tag = this;
+            pictureBox.BackColor = colors[counter++];
+            pictureBox.Size = new Size(200 + (this.Priority * 83), 63);
         }
+
 
         public override bool Equals(object obj)
         {

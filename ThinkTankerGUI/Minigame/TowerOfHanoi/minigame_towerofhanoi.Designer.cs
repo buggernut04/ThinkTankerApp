@@ -75,7 +75,7 @@
             // Disk1
             // 
             Disk1.BackColor = Color.SpringGreen;
-            Disk1.Location = new Point(207, 521);
+            Disk1.Location = new Point(217, 521);
             Disk1.Name = "Disk1";
             Disk1.Size = new Size(260, 38);
             Disk1.TabIndex = 3;
@@ -87,7 +87,7 @@
             // Disk2
             // 
             Disk2.BackColor = Color.DodgerBlue;
-            Disk2.Location = new Point(239, 468);
+            Disk2.Location = new Point(254, 479);
             Disk2.Name = "Disk2";
             Disk2.Size = new Size(198, 38);
             Disk2.TabIndex = 4;
@@ -99,7 +99,7 @@
             // Disk3
             // 
             Disk3.BackColor = Color.Crimson;
-            Disk3.Location = new Point(876, 521);
+            Disk3.Location = new Point(283, 437);
             Disk3.Name = "Disk3";
             Disk3.Size = new Size(140, 38);
             Disk3.TabIndex = 5;
