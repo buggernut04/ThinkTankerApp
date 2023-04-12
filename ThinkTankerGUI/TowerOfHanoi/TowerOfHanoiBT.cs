@@ -8,26 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ThinkTankerGUI.MainMenuForm
+namespace ThinkTankerGUI
 {
-
-    public partial class MainMenu : Form
+    public partial class TowerOfHanoiBT : Form
     {
-        public static TowerOfHanoiBT TOH = new();
-
-        public MainMenu()
+        public TowerOfHanoiBT()
         {
             InitializeComponent();
         }
-        private void MainMenu_Load(object sender, EventArgs e)
+
+        private void usernameLB_Click(object sender, EventArgs e)
         {
-            this.Owner.Hide();
+
+        }
+
+        private void buttonCus1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            MainMenu.TOH.ShowDialog(this);
-            this.ShowDialog();
+            this.Close();
         }
+
     }
 }

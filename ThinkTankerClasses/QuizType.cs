@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThinkTankerApp
+namespace ThinkTankerClasses
 {
-   public enum QuizType
-   {
+    public enum QuizType
+    {
         Easy,
         Moderate,
         Difficult
-   }
+    }
 }

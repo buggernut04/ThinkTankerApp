@@ -1,8 +1,8 @@
-using ThinkTankerApp;
+using ThinkTankerClasses;
 
-namespace ThinkTankerUserClassTesting
+namespace ThinkTankerClassTests
 {
-    public class Tests
+    public class UserTests
     {
         [SetUp]
         public void Setup()

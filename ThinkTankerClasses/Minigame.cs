@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThinkTankerApp
+namespace ThinkTankerClasses
 {
     public abstract class MiniGame
     {
@@ -13,8 +13,8 @@ namespace ThinkTankerApp
 
         public MiniGame(string name, string description)
         {
-            this.Name = name;
-            this.Description = description;
+            Name = name;
+            Description = description;
         }
     }
 }
