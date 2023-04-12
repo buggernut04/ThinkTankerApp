@@ -1,28 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-<PropertyGroup>
+  <PropertyGroup>
 	<OutputType>WinExe</OutputType>
 	<TargetFramework>net6.0-windows</TargetFramework>
 	<Nullable>enable</Nullable>
 	<UseWindowsForms>true</UseWindowsForms>
 	<ImplicitUsings>enable</ImplicitUsings>
-</PropertyGroup>
+  </PropertyGroup>
 
-<ItemGroup>
+  <ItemGroup>
 	<Compile Remove="Form1.cs" />
 	<Compile Remove="Form1.Designer.cs" />
-</ItemGroup>
+  </ItemGroup>
 
-<ItemGroup>
+  <ItemGroup>
 	<EmbeddedResource Remove="Form1.resx" />
-</ItemGroup>
+  </ItemGroup>
 
-<ItemGroup>
+  <ItemGroup>
 	<Folder Include="Custom Properties\" />
-</ItemGroup>
+  </ItemGroup>
 
-<ItemGroup>
+  <ItemGroup>
 	<ProjectReference Include="..\ThinkTankerClasses\ThinkTankerClasses.csproj" />
-</ItemGroup>
+  </ItemGroup>
 
 </Project>
