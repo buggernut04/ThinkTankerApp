@@ -7,83 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ThinkTankerApp;
+using ThinkTankerGUI.Minigame.TowerOfHanoi;
 
 namespace ThinkTankerGUI.Minigame
 {
     public partial class minigame_towerofhanoi : Form
     {
-        private bool oneismoving;
-        private Point onestartLocation;
-        private bool twoismoving;
-        private Point twostartLocation;
-        private bool threeismoving;
-        private Point threestartLocation;
-
         public minigame_towerofhanoi()
         {
             InitializeComponent();
         }
 
-        private void Disk1_MouseDown(object sender, MouseEventArgs e)
+        private void minigame_towerofhanoi_Load(object sender, EventArgs e)
         {
-            oneismoving = true;
-            onestartLocation = e.Location;
-        }
+            Disk disk0 = new Disk(0);
+            Disk disk1 = new Disk(1);
+            Disk disk2 = new Disk(2);
 
-        private void Disk1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (oneismoving)
-            {
-                Disk1.Left += e.Location.X - onestartLocation.X;
-                Disk1.Top += e.Location.Y - onestartLocation.Y;
-            }
-        }
+            disk0.SetPictureBox(Disk0);
+            disk1.SetPictureBox(Disk1);
+            disk2.SetPictureBox(Disk2);
 
-        private void Disk1_MouseUp(object sender, MouseEventArgs e)
-        {
-            oneismoving = false;
-        }
+            Pole pole1 = new Pole(1);
+            Pole pole2 = new Pole(2);
+            Pole pole3 = new Pole(3);
 
-        private void Disk2_MouseDown(object sender, MouseEventArgs e)
-        {
-            twoismoving = true;
-            twostartLocation = e.Location;
+            pole1.SetPictureBox(Pole1);
+            pole2.SetPictureBox(Pole2);
+            pole3.SetPictureBox(Pole3);
         }
-
-        private void Disk2_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (twoismoving)
-            {
-                Disk1.Left += e.Location.X - twostartLocation.X;
-                Disk1.Top += e.Location.Y - twostartLocation.Y;
-            }
-        }
-
-        private void Disk2_MouseUp(object sender, MouseEventArgs e)
-        {
-            twoismoving = false;
-        }
-
-        private void Disk3_MouseDown(object sender, MouseEventArgs e)
-        {
-            threeismoving = true;
-            threestartLocation = e.Location;
-        }
-
-        private void Disk3_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (threeismoving)
-            {
-                Disk1.Left += e.Location.X - threestartLocation.X;
-                Disk1.Top += e.Location.Y - threestartLocation.Y;
-            }
-        }
-
-        private void Disk3_MouseUp(object sender, MouseEventArgs e)
-        {
-            threeismoving = false;
-        }
-
 
     }
 }

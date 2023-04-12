@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,8 +22,8 @@ namespace ThinkTankerGUI.Minigame.TowerOfHanoi
         public void SetPictureBox(PictureBox pictureBox)
         {
             pictureBox.Tag = this;
-            pictureBox.Location = new Point(486 + (this.poleNumber * 435), 448);
-            pictureBox.Size = new Size(34, 483);
+            pictureBox.Location = new Point((this.poleNumber * 300) + 23, 337);
+            pictureBox.Size = new Size(34, 274);
             pictureBox.BackColor = Color.Chocolate;
         }
 
