@@ -1,4 +1,4 @@
-﻿namespace ThinkTankerGUI
+﻿namespace Study_Application.Forms.LogIn
 {
     partial class LogIn
     {
@@ -37,7 +37,7 @@
             pictureBox1 = new PictureBox();
             SignUp = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            //SuspendLayout();
+            SuspendLayout();
             // 
             // SignUp
             // 
@@ -51,6 +51,7 @@
             SignUp.TabIndex = 4;
             SignUp.Text = "SignUp!";
             SignUp.TextAlign = ContentAlignment.MiddleLeft;
+            SignUp.Click += SignUp_Click;
             // 
             // Label
             // 
@@ -121,6 +122,7 @@
             signInB.Text = "Sign In";
             signInB.TextColor = Color.FromArgb(2, 48, 71);
             signInB.UseVisualStyleBackColor = false;
+            signInB.Click += signInB_Click_1;
             // 
             // pictureBox1
             // 
@@ -130,6 +132,28 @@
             pictureBox1.Size = new Size(574, 249);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            // 
+            // LogIn
+            // 
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(2, 48, 71);
+            ClientSize = new Size(1264, 749);
+            Controls.Add(pictureBox1);
+            Controls.Add(signInB);
+            Controls.Add(passwordTB);
+            Controls.Add(usernameTB);
+            Controls.Add(SignUp);
+            Controls.Add(Label);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "LogIn";
+            Text = "LogIn";
+            FormClosing += LogIn_FormClosing;
+            Load += LogIn_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

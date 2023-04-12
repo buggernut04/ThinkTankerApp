@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
-using ThinkTankerGUI;
+using Study_Application.Classes;
+using Study_Application.Forms.MainMenuForm;
+using Study_Application.Forms.SignUpForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +12,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ThinkTankerClasses;
+using User = Study_Application.Classes.User;
 
 namespace Study_Application.Forms.LogIn
 {
