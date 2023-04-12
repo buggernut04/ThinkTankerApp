@@ -1,4 +1,5 @@
 ﻿using ThinkTankerGUI.Minigame;
+using ThinkTankerGUI.LogInForm;
 
 namespace ThinkTankerGUI
 {
@@ -13,7 +14,7 @@ namespace ThinkTankerGUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new minigame_towerofhanoi());
+            Application.Run(new LogIn());
         }
     }
 }
