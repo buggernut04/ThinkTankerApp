@@ -46,9 +46,10 @@
             // 
             Pole1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             Pole1.BackColor = Color.Chocolate;
-            Pole1.Location = new Point(340, 269);
+            Pole1.Location = new Point(389, 359);
+            Pole1.Margin = new Padding(3, 4, 3, 4);
             Pole1.Name = "Pole1";
-            Pole1.Size = new Size(24, 290);
+            Pole1.Size = new Size(27, 387);
             Pole1.TabIndex = 0;
             Pole1.TabStop = false;
             // 
@@ -56,9 +57,10 @@
             // 
             Pole2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             Pole2.BackColor = Color.Chocolate;
-            Pole2.Location = new Point(645, 269);
+            Pole2.Location = new Point(737, 359);
+            Pole2.Margin = new Padding(3, 4, 3, 4);
             Pole2.Name = "Pole2";
-            Pole2.Size = new Size(24, 290);
+            Pole2.Size = new Size(27, 387);
             Pole2.TabIndex = 1;
             Pole2.TabStop = false;
             // 
@@ -66,18 +68,20 @@
             // 
             Pole3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             Pole3.BackColor = Color.Chocolate;
-            Pole3.Location = new Point(935, 269);
+            Pole3.Location = new Point(1069, 359);
+            Pole3.Margin = new Padding(3, 4, 3, 4);
             Pole3.Name = "Pole3";
-            Pole3.Size = new Size(24, 290);
+            Pole3.Size = new Size(27, 387);
             Pole3.TabIndex = 2;
             Pole3.TabStop = false;
             // 
             // Disk1
             // 
             Disk1.BackColor = Color.SpringGreen;
-            Disk1.Location = new Point(217, 521);
+            Disk1.Location = new Point(248, 695);
+            Disk1.Margin = new Padding(3, 4, 3, 4);
             Disk1.Name = "Disk1";
-            Disk1.Size = new Size(260, 38);
+            Disk1.Size = new Size(297, 51);
             Disk1.TabIndex = 3;
             Disk1.TabStop = false;
             Disk1.MouseDown += Disk1_MouseDown;
@@ -87,9 +91,10 @@
             // Disk2
             // 
             Disk2.BackColor = Color.DodgerBlue;
-            Disk2.Location = new Point(254, 479);
+            Disk2.Location = new Point(290, 639);
+            Disk2.Margin = new Padding(3, 4, 3, 4);
             Disk2.Name = "Disk2";
-            Disk2.Size = new Size(198, 38);
+            Disk2.Size = new Size(226, 51);
             Disk2.TabIndex = 4;
             Disk2.TabStop = false;
             Disk2.MouseDown += Disk2_MouseDown;
@@ -99,9 +104,10 @@
             // Disk3
             // 
             Disk3.BackColor = Color.Crimson;
-            Disk3.Location = new Point(283, 437);
+            Disk3.Location = new Point(674, 695);
+            Disk3.Margin = new Padding(3, 4, 3, 4);
             Disk3.Name = "Disk3";
-            Disk3.Size = new Size(140, 38);
+            Disk3.Size = new Size(160, 51);
             Disk3.TabIndex = 5;
             Disk3.TabStop = false;
             Disk3.MouseDown += Disk3_MouseDown;
@@ -110,16 +116,17 @@
             // 
             // minigame_towerofhanoi
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.NavajoWhite;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1445, 908);
             Controls.Add(Disk3);
             Controls.Add(Disk2);
             Controls.Add(Disk1);
             Controls.Add(Pole3);
             Controls.Add(Pole2);
             Controls.Add(Pole1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "minigame_towerofhanoi";
             ((System.ComponentModel.ISupportInitialize)Pole1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Pole2).EndInit();

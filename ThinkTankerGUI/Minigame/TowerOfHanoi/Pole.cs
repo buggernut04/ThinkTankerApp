@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Study_Application.Forms.MiniGames.TowerOfHanoi
+namespace ThinkTankerGUI.Minigame.TowerOfHanoi
 {
     public class Pole
     {
