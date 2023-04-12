@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThinkTankerClasses
+namespace ThinkTankerApp
 {
     public class Quiz
     {

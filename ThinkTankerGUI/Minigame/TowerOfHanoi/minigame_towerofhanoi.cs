@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Study_Application.Forms
+namespace ThinkTankerGUI.Minigame
 {
     public partial class minigame_towerofhanoi : Form
     {

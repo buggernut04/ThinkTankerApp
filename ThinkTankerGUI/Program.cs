@@ -1,4 +1,4 @@
-using Study_Application.Forms;
+﻿using ThinkTankerGUI.Minigame;
 
 namespace ThinkTankerGUI
 {
