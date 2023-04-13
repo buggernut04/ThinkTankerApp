@@ -37,9 +37,15 @@
             BrainProbeB = new Custom_Properties.ButtonCus();
             BrainTeasersB = new Custom_Properties.ButtonCus();
             hoverTxt = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            buttonCus1 = new Custom_Properties.ButtonCus();
+            buttonCus2 = new Custom_Properties.ButtonCus();
             panel1.SuspendLayout();
             gradientCus1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureboxCus1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -79,11 +85,11 @@
             usernameLB.BackColor = Color.Transparent;
             usernameLB.Font = new Font("Cascadia Code SemiBold", 23F, FontStyle.Regular, GraphicsUnit.Point);
             usernameLB.ForeColor = Color.FromArgb(255, 247, 237);
-            usernameLB.Location = new Point(178, 99);
+            usernameLB.Location = new Point(126, 104);
             usernameLB.Name = "usernameLB";
-            usernameLB.Size = new Size(275, 51);
+            usernameLB.Size = new Size(321, 51);
             usernameLB.TabIndex = 1;
-            usernameLB.Text = "Loren Ipsum";
+            usernameLB.Text = "Welcome! User";
             // 
             // pictureboxCus1
             // 
@@ -94,10 +100,11 @@
             pictureboxCus1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             pictureboxCus1.BorderSize = 0;
             pictureboxCus1.GradientAngle = 50F;
-            pictureboxCus1.Location = new Point(53, 77);
+            pictureboxCus1.Image = (Image)resources.GetObject("pictureboxCus1.Image");
+            pictureboxCus1.Location = new Point(30, 84);
             pictureboxCus1.Margin = new Padding(3, 4, 3, 4);
             pictureboxCus1.Name = "pictureboxCus1";
-            pictureboxCus1.Size = new Size(113, 113);
+            pictureboxCus1.Size = new Size(90, 90);
             pictureboxCus1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureboxCus1.TabIndex = 0;
             pictureboxCus1.TabStop = false;
@@ -171,12 +178,78 @@
             hoverTxt.Size = new Size(0, 20);
             hoverTxt.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(510, 396);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(323, 336);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(853, 335);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(399, 397);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+            // 
+            // buttonCus1
+            // 
+            buttonCus1.BackColor = Color.PeachPuff;
+            buttonCus1.BackgroundColor = Color.PeachPuff;
+            buttonCus1.BorderColor = Color.PaleVioletRed;
+            buttonCus1.BorderRadius = 29;
+            buttonCus1.BorderSize = 0;
+            buttonCus1.FlatAppearance.BorderSize = 0;
+            buttonCus1.FlatStyle = FlatStyle.Flat;
+            buttonCus1.Font = new Font("Impact", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCus1.ForeColor = Color.FromArgb(251, 133, 0);
+            buttonCus1.Location = new Point(546, 355);
+            buttonCus1.Margin = new Padding(3, 4, 3, 4);
+            buttonCus1.Name = "buttonCus1";
+            buttonCus1.Size = new Size(330, 100);
+            buttonCus1.TabIndex = 4;
+            buttonCus1.Text = "Tower Of Hanoi";
+            buttonCus1.TextColor = Color.FromArgb(251, 133, 0);
+            buttonCus1.UseVisualStyleBackColor = false;
+            buttonCus1.Click += buttonCus1_Click;
+            // 
+            // buttonCus2
+            // 
+            buttonCus2.BackColor = Color.PeachPuff;
+            buttonCus2.BackgroundColor = Color.PeachPuff;
+            buttonCus2.BorderColor = Color.PaleVioletRed;
+            buttonCus2.BorderRadius = 29;
+            buttonCus2.BorderSize = 0;
+            buttonCus2.FlatAppearance.BorderSize = 0;
+            buttonCus2.FlatStyle = FlatStyle.Flat;
+            buttonCus2.Font = new Font("Impact", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCus2.ForeColor = Color.FromArgb(251, 133, 0);
+            buttonCus2.Location = new Point(901, 355);
+            buttonCus2.Margin = new Padding(3, 4, 3, 4);
+            buttonCus2.Name = "buttonCus2";
+            buttonCus2.Size = new Size(330, 100);
+            buttonCus2.TabIndex = 5;
+            buttonCus2.Text = "Matching Game";
+            buttonCus2.TextColor = Color.FromArgb(251, 133, 0);
+            buttonCus2.UseVisualStyleBackColor = false;
+            buttonCus2.Click += buttonCus2_Click;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(2, 48, 71);
             ClientSize = new Size(1264, 744);
+            Controls.Add(buttonCus2);
+            Controls.Add(buttonCus1);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(hoverTxt);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -191,6 +264,8 @@
             gradientCus1.ResumeLayout(false);
             gradientCus1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureboxCus1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -205,5 +280,9 @@
         private PictureboxCus pictureboxCus1;
         private Label usernameLB;
         private Label hoverTxt;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Custom_Properties.ButtonCus buttonCus1;
+        private Custom_Properties.ButtonCus buttonCus2;
     }
 }

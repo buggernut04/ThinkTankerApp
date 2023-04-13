@@ -25,7 +25,11 @@ namespace ThinkTankerGUI.LogInForm
             InitializeComponent();
             this.AcceptButton = signInB;
 
-            this.FormClosing += LogIn_FormClosing;
+            /*ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "buggernut04", "Gwapoko-123"));
+            ProjectDatabase.SaveUserRecord();
+            ProjectDatabase.LoadUserRecord();
+
+            this.FormClosing += LogIn_FormClosing;*/
 
         }
 
@@ -45,7 +49,11 @@ namespace ThinkTankerGUI.LogInForm
         }
         private void signInB_Click_1(object sender, EventArgs e)
         {
-            bool canLogin = false;
+            this.Hide();
+            LogIn.mainMenu.ShowDialog(this);
+            this.Show();
+
+            /*bool canLogin = false;
             
             foreach(var u in ProjectDatabase.UserRecord)
             {
@@ -62,7 +70,7 @@ namespace ThinkTankerGUI.LogInForm
             }
            
             if (!canLogin)
-               MessageBox.Show("Invalid Username and Password!");
+               MessageBox.Show("Invalid Username and Password!");*/
 
         }
 

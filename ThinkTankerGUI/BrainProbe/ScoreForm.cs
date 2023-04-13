@@ -23,7 +23,7 @@ namespace BrainProbe
 
         public void paused()
         {
-            scoreFormLabel.Text = $"Game is Pause";
+            scoreFormLabel.Text = $"        Game is Pause";
         }
 
 
