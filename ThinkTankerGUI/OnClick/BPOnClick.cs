@@ -16,6 +16,11 @@ namespace ThinkTankerGUI.OnClick
         {
             InitializeComponent();
         }
+
+        private void BPOnClick_Load(object sender, EventArgs e)
+        {
+            this.Owner.Hide();
+        }
     }
 
 }
