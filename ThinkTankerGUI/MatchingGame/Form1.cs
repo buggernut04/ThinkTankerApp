@@ -37,7 +37,7 @@ namespace ThinkTankerGUI.MatchingGame
 
         PictureBox first, second;
 
-        bool done = false; 
+        bool done = false;
 
         public Form1()
         {
@@ -92,7 +92,7 @@ namespace ThinkTankerGUI.MatchingGame
         {
             Random r = new Random();
 
-            for (int i = 0; i < 16; i++) 
+            for (int i = 0; i < 16; i++)
             {
                 Tags(i);
             }
@@ -163,7 +163,7 @@ namespace ThinkTankerGUI.MatchingGame
                 {
                     ctr++;
                 }
-                
+
             }
             else if (first.Tag.ToString() != second.Tag.ToString())
             {
@@ -204,7 +204,7 @@ namespace ThinkTankerGUI.MatchingGame
                         flag = 1;
                         return;
                     }
-                   
+
                     second = cast;
                     second.BackgroundImage = second.InitialImage;
                     done = true;
@@ -230,7 +230,7 @@ namespace ThinkTankerGUI.MatchingGame
             foreach (Control c in this.Controls)
             {
                 if (c is PictureBox)
-                {   
+                {
                     PictureBox pb = (PictureBox)c;
                     pb.BackgroundImage = null;
                 }
@@ -311,7 +311,7 @@ namespace ThinkTankerGUI.MatchingGame
                     if (pb.BackgroundImage == null)
                     {
                         allMatched = false;
-                        break;     
+                        break;
                     }
                 }
             }
@@ -324,11 +324,20 @@ namespace ThinkTankerGUI.MatchingGame
                 timer.Stop();
                 flag = 0;
                 flag1 = 0;
-                MessageBox.Show("Congratulations,"  + " You Won in just " + elapsed.ToString(@"mm\:ss")+" seconds!");
+                MessageBox.Show("Congratulations," + " You Won in just " + elapsed.ToString(@"mm\:ss") + " seconds!");
                 win = 1;
             }
 
         }
 
+        private void exitBT_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

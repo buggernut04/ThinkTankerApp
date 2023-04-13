@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ThinkTankerGUI.LogInForm;
+using ThinkTankerGUI.MainMenuForm;
 
 namespace ThinkTankerGUI.TowerOfHanoi
 {
@@ -47,7 +49,6 @@ namespace ThinkTankerGUI.TowerOfHanoi
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            //this.RestartGame();
             this.Close();
         }
 

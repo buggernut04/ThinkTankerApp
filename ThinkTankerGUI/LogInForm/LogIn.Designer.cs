@@ -47,7 +47,7 @@ partial class LogIn
         SignUp.ForeColor = Color.FromArgb(251, 133, 0);
         SignUp.Location = new Point(707, 674);
         SignUp.Name = "SignUp";
-        SignUp.Size = new Size(71, 27);
+        SignUp.Size = new Size(89, 34);
         SignUp.TabIndex = 4;
         SignUp.Text = "SignUp!";
         SignUp.TextAlign = ContentAlignment.MiddleLeft;
@@ -60,7 +60,7 @@ partial class LogIn
         Label.ForeColor = Color.FromArgb(255, 247, 237);
         Label.Location = new Point(515, 674);
         Label.Name = "Label";
-        Label.Size = new Size(199, 27);
+        Label.Size = new Size(256, 34);
         Label.TabIndex = 3;
         Label.Text = "Don't Have an Account?";
         // 
@@ -100,7 +100,7 @@ partial class LogIn
         passwordTB.PasswordChar = true;
         passwordTB.PlaceholderColor = Color.DimGray;
         passwordTB.PlaceholderText = "password";
-        passwordTB.Size = new Size(291, 36);
+        passwordTB.Size = new Size(291, 42);
         passwordTB.TabIndex = 2;
         passwordTB.UnderlinedStyle = false;
         // 
@@ -149,6 +149,7 @@ partial class LogIn
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "LogIn";
+        StartPosition = FormStartPosition.CenterScreen;
         Text = "LogIn";
         FormClosing += LogIn_FormClosing;
         Load += LogIn_Load;
