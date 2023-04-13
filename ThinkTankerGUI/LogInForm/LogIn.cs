@@ -49,6 +49,9 @@ namespace ThinkTankerGUI.LogInForm
             {
                 if (u.CanLogIn(usernameTB.Text, passwordTB.Text))
                 {
+                    // creation partial database
+
+                    this.Hide();
                     LogIn.mainMenu.ShowDialog(this);
                     this.Show();
                     canLogin = true;
@@ -58,7 +61,10 @@ namespace ThinkTankerGUI.LogInForm
            
             if (!canLogin)
                MessageBox.Show("Invalid Username and Password!");
+
         }
+
+
 
     }
 }
