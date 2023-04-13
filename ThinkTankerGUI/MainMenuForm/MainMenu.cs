@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BrainProbe;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace ThinkTankerGUI.MainMenuForm
     public partial class MainMenu : Form
     {
         public static Form1 matchGame = new();
+        public static dashboardForm dashBoardForm = new();
         public MainMenu()
         {
             InitializeComponent();
@@ -32,6 +34,16 @@ namespace ThinkTankerGUI.MainMenuForm
             this.Show();
         }
 
+        private void ExitB_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
+        private void BrainProbeB_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu.dashBoardForm.ShowDialog(this);
+            this.Show();
+        }
     }
 }

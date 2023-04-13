@@ -14,7 +14,7 @@ namespace BrainProbe
             timerLabel.Visible = false;
             pauseBT.Visible = false;
             exitBT.Visible = false;
-
+            outBT.Visible = true;
         }
 
         private void quiztimer_Tick(object sender, EventArgs e)
@@ -207,6 +207,7 @@ namespace BrainProbe
 
         private void startQuiz()
         {
+            outBT.Visible = false;
             exitBT.Visible = true;
             easyBT.Visible = false;
             moderateBT.Visible = false;
@@ -216,6 +217,7 @@ namespace BrainProbe
 
         private void exitBT_Click(object sender, EventArgs e)
         {
+            outBT.Visible = true;
             exitBT.Visible = false;
             easyBT.Visible = true;
             moderateBT.Visible = true;
@@ -231,6 +233,11 @@ namespace BrainProbe
             pauseBT.Visible = false;
             scoreForm1.Visible = false;
 
+        }
+
+        private void outBT_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

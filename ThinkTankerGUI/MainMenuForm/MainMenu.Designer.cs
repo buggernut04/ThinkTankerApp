@@ -119,6 +119,7 @@
             ExitB.TabIndex = 2;
             ExitB.TextColor = Color.White;
             ExitB.UseVisualStyleBackColor = false;
+            ExitB.Click += ExitB_Click;
             // 
             // BrainProbeB
             // 
@@ -139,6 +140,7 @@
             BrainProbeB.Text = "Brain Probe";
             BrainProbeB.TextColor = Color.FromArgb(251, 133, 0);
             BrainProbeB.UseVisualStyleBackColor = false;
+            BrainProbeB.Click += BrainProbeB_Click;
             // 
             // BrainTeasersB
             // 
@@ -177,7 +179,7 @@
             ClientSize = new Size(1264, 744);
             Controls.Add(hoverTxt);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;

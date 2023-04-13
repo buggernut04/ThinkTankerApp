@@ -34,6 +34,7 @@
             moderateBT = new Button();
             easyBT = new Button();
             panel2 = new Panel();
+            outBT = new Button();
             exitBT = new Button();
             timerLabel = new Label();
             pauseBT = new Button();
@@ -103,6 +104,7 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(2, 60, 71);
+            panel2.Controls.Add(outBT);
             panel2.Controls.Add(exitBT);
             panel2.Controls.Add(timerLabel);
             panel2.Controls.Add(pauseBT);
@@ -112,10 +114,24 @@
             panel2.Size = new Size(1038, 65);
             panel2.TabIndex = 1;
             // 
+            // outBT
+            // 
+            outBT.FlatAppearance.BorderColor = SystemColors.ButtonHighlight;
+            outBT.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 60, 71);
+            outBT.FlatStyle = FlatStyle.Flat;
+            outBT.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            outBT.ForeColor = SystemColors.ButtonHighlight;
+            outBT.Location = new Point(992, 17);
+            outBT.Name = "outBT";
+            outBT.Size = new Size(34, 32);
+            outBT.TabIndex = 2;
+            outBT.Text = "X";
+            outBT.UseVisualStyleBackColor = true;
+            outBT.Click += outBT_Click;
+            // 
             // exitBT
             // 
             exitBT.FlatAppearance.BorderColor = SystemColors.ButtonHighlight;
-            exitBT.FlatAppearance.BorderSize = 2;
             exitBT.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 128, 255);
             exitBT.FlatStyle = FlatStyle.Flat;
             exitBT.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
@@ -123,7 +139,7 @@
             exitBT.Location = new Point(15, 10);
             exitBT.Name = "exitBT";
             exitBT.Size = new Size(96, 39);
-            exitBT.TabIndex = 2;
+            exitBT.TabIndex = 1;
             exitBT.Text = "Exit";
             exitBT.TextAlign = ContentAlignment.TopCenter;
             exitBT.UseVisualStyleBackColor = true;
@@ -205,7 +221,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(scoreForm1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "dashboardForm";
@@ -231,5 +247,6 @@
         private System.Windows.Forms.Timer quiztimer;
         private ScoreForm scoreForm1;
         private Button exitBT;
+        private Button outBT;
     }
 }

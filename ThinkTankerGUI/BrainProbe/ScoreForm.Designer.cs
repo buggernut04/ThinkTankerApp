@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             scoreFormLabel = new Label();
-            label1 = new Label();
             SuspendLayout();
             // 
             // scoreFormLabel
@@ -43,23 +42,11 @@
             scoreFormLabel.TabIndex = 0;
             scoreFormLabel.Text = "Your Score is \"\";";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(211, 295);
-            label1.Name = "label1";
-            label1.Size = new Size(499, 38);
-            label1.TabIndex = 2;
-            label1.Text = "Well done on completing the quiz!";
-            // 
             // ScoreForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
-            Controls.Add(label1);
             Controls.Add(scoreFormLabel);
             Name = "ScoreForm";
             Size = new Size(922, 537);
@@ -70,6 +57,5 @@
         #endregion
 
         private Label scoreFormLabel;
-        private Label label1;
     }
 }
