@@ -18,6 +18,7 @@ namespace ThinkTankerGUI.MainMenuForm
     {
         public static TowerOfHanoiBT TOH = new();
         public static BTOnClick BTC = new();
+        public static BPOnClick BPC = new();
 
         public MainMenu()
         {
@@ -61,6 +62,12 @@ namespace ThinkTankerGUI.MainMenuForm
         private void BrainProbeB_MouseLeave(object sender, EventArgs e)
         {
             hoverTxt.Text = "";
+        }
+
+        private void BrainProbeB_Click(object sender, EventArgs e)
+        {
+            MainMenu.BPC.ShowDialog(this);
+            this.ShowDialog();
         }
     }
 }

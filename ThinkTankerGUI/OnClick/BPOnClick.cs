@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace ThinkTankerGUI.OnClick
 {
-    public partial class Form1 : Form
+    public partial class BPOnClick : Form
     {
-        public Form1()
+        public BPOnClick()
         {
             InitializeComponent();
         }
     }
+
 }

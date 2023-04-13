@@ -135,6 +135,7 @@
             BrainProbeB.Text = "Brain Probe";
             BrainProbeB.TextColor = Color.FromArgb(251, 133, 0);
             BrainProbeB.UseVisualStyleBackColor = false;
+            BrainProbeB.Click += BrainProbeB_Click;
             BrainProbeB.MouseLeave += BrainProbeB_MouseLeave;
             BrainProbeB.MouseHover += BrainProbeB_MouseHover;
             // 
