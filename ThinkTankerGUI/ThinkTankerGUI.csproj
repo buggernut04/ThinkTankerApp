@@ -19,10 +19,26 @@
 
 	<ItemGroup>
 		<Folder Include="Custom Properties\" />
+		<Folder Include="MatchingGame\" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\ThinkTankerClasses\ThinkTankerClasses.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="MatchingGame\Properties\Settings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Settings.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="MatchingGame\Properties\Settings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
 	</ItemGroup>
 
 </Project>

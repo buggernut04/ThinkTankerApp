@@ -1,4 +1,4 @@
-﻿namespace ThinkTankerGUI
+﻿namespace ThinkTankerGUI.TowerOfHanoi
 {
     partial class TowerOfHanoiBT
     {
@@ -160,14 +160,14 @@
             // 
             // Disk3
             // 
-            Disk1.BackColor = Color.Red;
-            Disk1.Location = new Point(385, 482);
-            Disk1.Margin = new Padding(3, 4, 3, 4);
-            Disk1.Name = "Disk1";
-            Disk1.Size = new Size(79, 27);
-            Disk1.TabIndex = 4;
-            Disk1.TabStop = false;
-            Disk1.Tag = "Disk";
+            Disk3.BackColor = Color.Yellow;
+            Disk3.Location = new Point(720, 482);
+            Disk3.Margin = new Padding(3, 4, 3, 4);
+            Disk3.Name = "Disk3";
+            Disk3.Size = new Size(138, 27);
+            Disk3.TabIndex = 6;
+            Disk3.TabStop = false;
+            Disk3.Tag = "Disk";
             // 
             // Disk2
             // 
@@ -182,14 +182,14 @@
             // 
             // Disk1
             // 
-            Disk3.BackColor = Color.Yellow;
-            Disk3.Location = new Point(536, 482);
-            Disk3.Margin = new Padding(3, 4, 3, 4);
-            Disk3.Name = "Disk3";
-            Disk3.Size = new Size(138, 27);
-            Disk3.TabIndex = 6;
-            Disk3.TabStop = false;
-            Disk3.Tag = "Disk";
+            Disk1.BackColor = Color.Red;
+            Disk1.Location = new Point(385, 482);
+            Disk1.Margin = new Padding(3, 4, 3, 4);
+            Disk1.Name = "Disk1";
+            Disk1.Size = new Size(79, 27);
+            Disk1.TabIndex = 4;
+            Disk1.TabStop = false;
+            Disk1.Tag = "Disk";
             // 
             // TowerOfHanoiBT
             // 

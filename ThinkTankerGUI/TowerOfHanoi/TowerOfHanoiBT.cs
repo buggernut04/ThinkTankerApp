@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ThinkTankerGUI
+namespace ThinkTankerGUI.TowerOfHanoi
 {
     public partial class TowerOfHanoiBT : Form
     {
@@ -33,7 +33,7 @@ namespace ThinkTankerGUI
             Pole1.DiskStack.Push(Disk2);
             Pole1.DiskStack.Push(Disk3);
 
-            Disk1.SetPictureBox(Disk1);
+            //Disk1.SetPictureBox(Disk1);
         }
 
 
