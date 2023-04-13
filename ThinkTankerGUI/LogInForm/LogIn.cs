@@ -24,7 +24,13 @@ namespace ThinkTankerGUI.LogInForm
         {
             InitializeComponent();
             this.AcceptButton = signInB;
+
+            ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "buggernut04", "Gwapoko-123"));
+            ProjectDatabase.SaveUserRecord();
+            ProjectDatabase.LoadUserRecord();
+
             this.FormClosing += LogIn_FormClosing;
+
         }
 
         private void LogIn_FormClosing(object? sender, FormClosingEventArgs e)

@@ -18,11 +18,17 @@ namespace ThinkTankerGUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            ProjectDatabase.LoadUserRecord();
+            // Please don't change
+            // If mo run mo ari, e comment ras ubos.
+            
             ProjectDatabase.LoadQuizRecord();
             ProjectDatabase.LoadMatchingGameRecord();
+            ProjectDatabase.LoadUserRecord();
 
-            Application.Run(new MainMenu());
+
+            Application.Run(new LogIn());
+
+            //Application.Run(new MainMenu());
 
             //Application.Run(new SignUp());
 
