@@ -23,8 +23,8 @@ namespace ThinkTankerGUI
             
             ProjectDatabase.LoadQuizRecord();
             ProjectDatabase.LoadMatchingGameRecord();
+            ProjectDatabase.LoadUserRecord();
 
-            
 
             Application.Run(new LogIn());
 
