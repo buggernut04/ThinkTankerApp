@@ -51,9 +51,8 @@
             panel1.Controls.Add(BrainTeasersB);
             panel1.ForeColor = SystemColors.ControlLight;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(483, 1051);
+            panel1.Size = new Size(423, 788);
             panel1.TabIndex = 0;
             // 
             // gradientCus1
@@ -67,9 +66,8 @@
             gradientCus1.Dock = DockStyle.Top;
             gradientCus1.ForeColor = Color.FromArgb(251, 133, 0);
             gradientCus1.Location = new Point(0, 0);
-            gradientCus1.Margin = new Padding(3, 4, 3, 4);
             gradientCus1.Name = "gradientCus1";
-            gradientCus1.Size = new Size(483, 347);
+            gradientCus1.Size = new Size(423, 260);
             gradientCus1.TabIndex = 0;
             gradientCus1.TopColor = Color.FromArgb(245, 47, 87);
             // 
@@ -79,9 +77,9 @@
             usernameLB.BackColor = Color.Transparent;
             usernameLB.Font = new Font("Cascadia Code SemiBold", 23F, FontStyle.Regular, GraphicsUnit.Point);
             usernameLB.ForeColor = Color.FromArgb(255, 247, 237);
-            usernameLB.Location = new Point(178, 99);
+            usernameLB.Location = new Point(156, 74);
             usernameLB.Name = "usernameLB";
-            usernameLB.Size = new Size(275, 51);
+            usernameLB.Size = new Size(216, 41);
             usernameLB.TabIndex = 1;
             usernameLB.Text = "Loren Ipsum";
             // 
@@ -94,10 +92,9 @@
             pictureboxCus1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             pictureboxCus1.BorderSize = 0;
             pictureboxCus1.GradientAngle = 50F;
-            pictureboxCus1.Location = new Point(53, 77);
-            pictureboxCus1.Margin = new Padding(3, 4, 3, 4);
+            pictureboxCus1.Location = new Point(46, 58);
             pictureboxCus1.Name = "pictureboxCus1";
-            pictureboxCus1.Size = new Size(113, 113);
+            pictureboxCus1.Size = new Size(99, 99);
             pictureboxCus1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureboxCus1.TabIndex = 0;
             pictureboxCus1.TabStop = false;
@@ -113,9 +110,10 @@
             ExitB.FlatStyle = FlatStyle.Flat;
             ExitB.ForeColor = Color.White;
             ExitB.Image = (Image)resources.GetObject("ExitB.Image");
-            ExitB.Location = new Point(177, 566);
+            ExitB.Location = new Point(172, 565);
+            ExitB.Margin = new Padding(3, 2, 3, 2);
             ExitB.Name = "ExitB";
-            ExitB.Size = new Size(79, 92);
+            ExitB.Size = new Size(69, 69);
             ExitB.TabIndex = 2;
             ExitB.TextColor = Color.White;
             ExitB.UseVisualStyleBackColor = false;
@@ -131,10 +129,9 @@
             BrainProbeB.FlatStyle = FlatStyle.Flat;
             BrainProbeB.Font = new Font("Impact", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
             BrainProbeB.ForeColor = Color.FromArgb(251, 133, 0);
-            BrainProbeB.Location = new Point(77, 575);
-            BrainProbeB.Margin = new Padding(3, 4, 3, 4);
+            BrainProbeB.Location = new Point(67, 431);
             BrainProbeB.Name = "BrainProbeB";
-            BrainProbeB.Size = new Size(330, 100);
+            BrainProbeB.Size = new Size(289, 75);
             BrainProbeB.TabIndex = 1;
             BrainProbeB.Text = "Brain Probe";
             BrainProbeB.TextColor = Color.FromArgb(251, 133, 0);
@@ -154,10 +151,9 @@
             BrainTeasersB.FlatStyle = FlatStyle.Flat;
             BrainTeasersB.Font = new Font("Impact", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
             BrainTeasersB.ForeColor = Color.FromArgb(251, 133, 0);
-            BrainTeasersB.Location = new Point(77, 420);
-            BrainTeasersB.Margin = new Padding(3, 4, 3, 4);
+            BrainTeasersB.Location = new Point(67, 315);
             BrainTeasersB.Name = "BrainTeasersB";
-            BrainTeasersB.Size = new Size(330, 100);
+            BrainTeasersB.Size = new Size(289, 75);
             BrainTeasersB.TabIndex = 0;
             BrainTeasersB.Text = "Brain Teasers";
             BrainTeasersB.TextColor = Color.FromArgb(251, 133, 0);
@@ -169,20 +165,21 @@
             // hoverTxt
             // 
             hoverTxt.AutoSize = true;
-            hoverTxt.Location = new Point(606, 219);
+            hoverTxt.Location = new Point(530, 164);
             hoverTxt.Name = "hoverTxt";
             hoverTxt.Size = new Size(0, 15);
             hoverTxt.TabIndex = 1;
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(2, 48, 71);
             ClientSize = new Size(1264, 749);
             Controls.Add(hoverTxt);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "MainMenu";

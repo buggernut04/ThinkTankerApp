@@ -44,17 +44,27 @@ namespace ThinkTankerGUI.MainMenuForm
             hoverTxt.ForeColor = Color.PeachPuff;
             hoverTxt.Location = new Point(601, 268);
         }
-
-
-        private void BrainProbeB_MouseLeave(object sender, EventArgs e)
+        private void BrainTeasersB_MouseLeave(object sender, EventArgs e)
         {
             hoverTxt.Text = "";
         }
-
         private void BrainProbeB_Click(object sender, EventArgs e)
         {
             MainMenu.BPC.ShowDialog(this);
             this.ShowDialog();
+        }
+        private void BrainProbeB_MouseHover(object sender, EventArgs e)
+        {
+            hoverTxt.Text = "Test your knowledge\n with our quizes \n of various difficulties!";
+            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
+            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            hoverTxt.ForeColor = Color.PeachPuff;
+            hoverTxt.Location = new Point(601, 268);
+        }
+
+        private void BrainProbeB_MouseLeave(object sender, EventArgs e)
+        {
+            hoverTxt.Text = "";
         }
     }
 }
