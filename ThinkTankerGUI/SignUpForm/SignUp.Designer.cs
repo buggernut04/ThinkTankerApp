@@ -30,13 +30,13 @@
         {
             panel1 = new Panel();
             gradientCus1 = new Custom_Properties.GradientCus();
-            textBoxCus1 = new Custom_Properties.TextBoxCus();
-            textBoxCus2 = new Custom_Properties.TextBoxCus();
-            textBoxCus3 = new Custom_Properties.TextBoxCus();
-            buttonCus1 = new Custom_Properties.ButtonCus();
+            userNameTB = new Custom_Properties.TextBoxCus();
+            passwordTB = new Custom_Properties.TextBoxCus();
+            conpasswordTB = new Custom_Properties.TextBoxCus();
+            signUp_button = new Custom_Properties.ButtonCus();
             nameTB = new Custom_Properties.TextBoxCus();
-            dateTimePicker1 = new DateTimePicker();
-            SEX = new ListBox();
+            birthDatePicker = new DateTimePicker();
+            sexBttn = new ListBox();
             label2 = new Label();
             label3 = new Label();
             panel1.SuspendLayout();
@@ -63,85 +63,85 @@
             gradientCus1.TopColor = Color.FromArgb(134, 187, 216);
             gradientCus1.Paint += gradientCus1_Paint;
             // 
-            // textBoxCus1
+            // userNameTB
             // 
-            textBoxCus1.BackColor = Color.FromArgb(2, 48, 71);
-            textBoxCus1.BorderColor = Color.FromArgb(250, 240, 202);
-            textBoxCus1.BorderFocusColor = Color.FromArgb(251, 133, 0);
-            textBoxCus1.BorderRadius = 0;
-            textBoxCus1.BorderSize = 4;
-            textBoxCus1.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCus1.ForeColor = Color.DimGray;
-            textBoxCus1.Location = new Point(455, 261);
-            textBoxCus1.Multiline = false;
-            textBoxCus1.Name = "textBoxCus1";
-            textBoxCus1.Padding = new Padding(10, 7, 10, 7);
-            textBoxCus1.PasswordChar = false;
-            textBoxCus1.PlaceholderColor = Color.DarkGray;
-            textBoxCus1.PlaceholderText = "Username";
-            textBoxCus1.Size = new Size(500, 36);
-            textBoxCus1.TabIndex = 1;
-            textBoxCus1.UnderlinedStyle = true;
+            userNameTB.BackColor = Color.FromArgb(2, 48, 71);
+            userNameTB.BorderColor = Color.FromArgb(250, 240, 202);
+            userNameTB.BorderFocusColor = Color.FromArgb(251, 133, 0);
+            userNameTB.BorderRadius = 0;
+            userNameTB.BorderSize = 4;
+            userNameTB.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            userNameTB.ForeColor = Color.DimGray;
+            userNameTB.Location = new Point(455, 261);
+            userNameTB.Multiline = false;
+            userNameTB.Name = "userNameTB";
+            userNameTB.Padding = new Padding(10, 7, 10, 7);
+            userNameTB.PasswordChar = false;
+            userNameTB.PlaceholderColor = Color.DarkGray;
+            userNameTB.PlaceholderText = "Username";
+            userNameTB.Size = new Size(500, 36);
+            userNameTB.TabIndex = 1;
+            userNameTB.UnderlinedStyle = true;
             // 
-            // textBoxCus2
+            // passwordTB
             // 
-            textBoxCus2.BackColor = Color.FromArgb(2, 48, 71);
-            textBoxCus2.BorderColor = Color.FromArgb(250, 240, 202);
-            textBoxCus2.BorderFocusColor = Color.FromArgb(251, 133, 0);
-            textBoxCus2.BorderRadius = 0;
-            textBoxCus2.BorderSize = 4;
-            textBoxCus2.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCus2.ForeColor = Color.DimGray;
-            textBoxCus2.Location = new Point(455, 441);
-            textBoxCus2.Multiline = false;
-            textBoxCus2.Name = "textBoxCus2";
-            textBoxCus2.Padding = new Padding(10, 7, 10, 7);
-            textBoxCus2.PasswordChar = false;
-            textBoxCus2.PlaceholderColor = Color.DarkGray;
-            textBoxCus2.PlaceholderText = "Password";
-            textBoxCus2.Size = new Size(500, 36);
-            textBoxCus2.TabIndex = 2;
-            textBoxCus2.UnderlinedStyle = true;
-            textBoxCus2._TextChanged += passwordLabel__userInput;
+            passwordTB.BackColor = Color.FromArgb(2, 48, 71);
+            passwordTB.BorderColor = Color.FromArgb(250, 240, 202);
+            passwordTB.BorderFocusColor = Color.FromArgb(251, 133, 0);
+            passwordTB.BorderRadius = 0;
+            passwordTB.BorderSize = 4;
+            passwordTB.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            passwordTB.ForeColor = Color.DimGray;
+            passwordTB.Location = new Point(455, 441);
+            passwordTB.Multiline = false;
+            passwordTB.Name = "passwordTB";
+            passwordTB.Padding = new Padding(10, 7, 10, 7);
+            passwordTB.PasswordChar = false;
+            passwordTB.PlaceholderColor = Color.DarkGray;
+            passwordTB.PlaceholderText = "Password";
+            passwordTB.Size = new Size(500, 36);
+            passwordTB.TabIndex = 2;
+            passwordTB.UnderlinedStyle = true;
             // 
-            // textBoxCus3
+            // conpasswordTB
             // 
-            textBoxCus3.BackColor = Color.FromArgb(2, 48, 71);
-            textBoxCus3.BorderColor = Color.FromArgb(250, 240, 202);
-            textBoxCus3.BorderFocusColor = Color.FromArgb(251, 133, 0);
-            textBoxCus3.BorderRadius = 0;
-            textBoxCus3.BorderSize = 4;
-            textBoxCus3.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxCus3.ForeColor = Color.DimGray;
-            textBoxCus3.Location = new Point(455, 524);
-            textBoxCus3.Multiline = false;
-            textBoxCus3.Name = "textBoxCus3";
-            textBoxCus3.Padding = new Padding(10, 7, 10, 7);
-            textBoxCus3.PasswordChar = false;
-            textBoxCus3.PlaceholderColor = Color.DarkGray;
-            textBoxCus3.PlaceholderText = "Confirm Password";
-            textBoxCus3.Size = new Size(500, 36);
-            textBoxCus3.TabIndex = 3;
-            textBoxCus3.UnderlinedStyle = true;
+            conpasswordTB.BackColor = Color.FromArgb(2, 48, 71);
+            conpasswordTB.BorderColor = Color.FromArgb(250, 240, 202);
+            conpasswordTB.BorderFocusColor = Color.FromArgb(251, 133, 0);
+            conpasswordTB.BorderRadius = 0;
+            conpasswordTB.BorderSize = 4;
+            conpasswordTB.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            conpasswordTB.ForeColor = Color.DimGray;
+            conpasswordTB.Location = new Point(455, 524);
+            conpasswordTB.Multiline = false;
+            conpasswordTB.Name = "conpasswordTB";
+            conpasswordTB.Padding = new Padding(10, 7, 10, 7);
+            conpasswordTB.PasswordChar = false;
+            conpasswordTB.PlaceholderColor = Color.DarkGray;
+            conpasswordTB.PlaceholderText = "Confirm Password";
+            conpasswordTB.Size = new Size(500, 36);
+            conpasswordTB.TabIndex = 3;
+            conpasswordTB.UnderlinedStyle = true;
             // 
-            // buttonCus1
+            // signUp_button
             // 
-            buttonCus1.BackColor = Color.FromArgb(251, 133, 0);
-            buttonCus1.BackgroundColor = Color.FromArgb(251, 133, 0);
-            buttonCus1.BorderColor = Color.FromArgb(251, 133, 0);
-            buttonCus1.BorderRadius = 10;
-            buttonCus1.BorderSize = 0;
-            buttonCus1.FlatAppearance.BorderSize = 0;
-            buttonCus1.FlatStyle = FlatStyle.Flat;
-            buttonCus1.Font = new Font("Bauhaus 93", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCus1.ForeColor = Color.White;
-            buttonCus1.Location = new Point(455, 623);
-            buttonCus1.Name = "buttonCus1";
-            buttonCus1.Size = new Size(497, 37);
-            buttonCus1.TabIndex = 4;
-            buttonCus1.Text = "Sign Up!";
-            buttonCus1.TextColor = Color.White;
-            buttonCus1.UseVisualStyleBackColor = false;
+            signUp_button.BackColor = Color.FromArgb(251, 133, 0);
+            signUp_button.BackgroundColor = Color.FromArgb(251, 133, 0);
+            signUp_button.BorderColor = Color.FromArgb(251, 133, 0);
+            signUp_button.BorderRadius = 10;
+            signUp_button.BorderSize = 0;
+            signUp_button.FlatAppearance.BorderSize = 0;
+            signUp_button.FlatStyle = FlatStyle.Flat;
+            signUp_button.Font = new Font("Bauhaus 93", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            signUp_button.ForeColor = Color.White;
+            signUp_button.Location = new Point(455, 623);
+            signUp_button.Name = "signUp_button";
+            signUp_button.Size = new Size(497, 37);
+            signUp_button.TabIndex = 4;
+            signUp_button.Text = "Sign Up!";
+            signUp_button.TextColor = Color.White;
+            signUp_button.UseVisualStyleBackColor = false;
+            signUp_button.Click += signUp_button_Click;
             // 
             // nameTB
             // 
@@ -163,33 +163,33 @@
             nameTB.TabIndex = 5;
             nameTB.UnderlinedStyle = true;
             // 
-            // dateTimePicker1
+            // birthDatePicker
             // 
-            dateTimePicker1.CalendarFont = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker1.CalendarForeColor = SystemColors.ControlDark;
-            dateTimePicker1.CalendarMonthBackground = SystemColors.MenuBar;
-            dateTimePicker1.CalendarTitleForeColor = SystemColors.WindowFrame;
-            dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            dateTimePicker1.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(455, 374);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(227, 29);
-            dateTimePicker1.TabIndex = 6;
+            birthDatePicker.CalendarFont = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            birthDatePicker.CalendarForeColor = SystemColors.ControlDark;
+            birthDatePicker.CalendarMonthBackground = SystemColors.MenuBar;
+            birthDatePicker.CalendarTitleForeColor = SystemColors.WindowFrame;
+            birthDatePicker.CustomFormat = "dd-MM-yyyy";
+            birthDatePicker.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            birthDatePicker.Format = DateTimePickerFormat.Custom;
+            birthDatePicker.Location = new Point(455, 374);
+            birthDatePicker.Name = "birthDatePicker";
+            birthDatePicker.Size = new Size(227, 29);
+            birthDatePicker.TabIndex = 6;
             // 
-            // SEX
+            // sexBttn
             // 
-            SEX.BackColor = SystemColors.MenuBar;
-            SEX.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            SEX.ForeColor = SystemColors.WindowFrame;
-            SEX.FormattingEnabled = true;
-            SEX.IntegralHeight = false;
-            SEX.ItemHeight = 21;
-            SEX.Items.AddRange(new object[] { "Choose", "Male", "Female" });
-            SEX.Location = new Point(742, 374);
-            SEX.Name = "SEX";
-            SEX.Size = new Size(213, 25);
-            SEX.TabIndex = 7;
+            sexBttn.BackColor = SystemColors.MenuBar;
+            sexBttn.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            sexBttn.ForeColor = SystemColors.WindowFrame;
+            sexBttn.FormattingEnabled = true;
+            sexBttn.IntegralHeight = false;
+            sexBttn.ItemHeight = 21;
+            sexBttn.Items.AddRange(new object[] { "Choose", "Male", "Female" });
+            sexBttn.Location = new Point(742, 374);
+            sexBttn.Name = "sexBttn";
+            sexBttn.Size = new Size(213, 25);
+            sexBttn.TabIndex = 7;
             // 
             // label2
             // 
@@ -220,13 +220,13 @@
             ClientSize = new Size(1264, 749);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(SEX);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(sexBttn);
+            Controls.Add(birthDatePicker);
             Controls.Add(nameTB);
-            Controls.Add(buttonCus1);
-            Controls.Add(textBoxCus3);
-            Controls.Add(textBoxCus2);
-            Controls.Add(textBoxCus1);
+            Controls.Add(signUp_button);
+            Controls.Add(conpasswordTB);
+            Controls.Add(passwordTB);
+            Controls.Add(userNameTB);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
@@ -242,14 +242,14 @@
         #endregion
 
         private Panel panel1;
-        private Custom_Properties.TextBoxCus textBoxCus1;
-        private Custom_Properties.TextBoxCus textBoxCus2;
-        private Custom_Properties.TextBoxCus textBoxCus3;
-        private Custom_Properties.ButtonCus buttonCus1;
+        private Custom_Properties.TextBoxCus userNameTB;
+        private Custom_Properties.TextBoxCus passwordTB;
+        private Custom_Properties.TextBoxCus conpasswordTB;
+        private Custom_Properties.ButtonCus signUp_button;
         private Custom_Properties.GradientCus gradientCus1;
         private Custom_Properties.TextBoxCus nameTB;
-        private DateTimePicker dateTimePicker1;
-        private ListBox SEX;
+        private DateTimePicker birthDatePicker;
+        private ListBox sexBttn;
         private Label label2;
         private Label label3;
     }
