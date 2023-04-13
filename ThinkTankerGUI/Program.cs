@@ -18,11 +18,15 @@ namespace ThinkTankerGUI
             ApplicationConfiguration.Initialize();
 
             ProjectDatabase.LoadUserRecord();
+            ProjectDatabase.LoadQuizRecord();
+            ProjectDatabase.LoadMatchingGameRecord();
+
             //Application.Run(new LogIn());
 
             //Application.Run(new SignUp());
 
-            Application.Run(new TowerOfHanoiBT());
+            //Application.Run(new TowerOfHanoiBT());
+            //Application.Run(new MatchingGame.Form1());
         }
     }
 }

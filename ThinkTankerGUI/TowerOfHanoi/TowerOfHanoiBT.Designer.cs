@@ -1,4 +1,4 @@
-﻿namespace ThinkTankerGUI
+﻿namespace ThinkTankerGUI.TowerOfHanoi
 {
     partial class TowerOfHanoiBT
     {
