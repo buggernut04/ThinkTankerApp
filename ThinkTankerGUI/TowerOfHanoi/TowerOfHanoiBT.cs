@@ -21,9 +21,9 @@ namespace ThinkTankerGUI
 
         private void InitializeGame()
         {
-            TowerOfHanoi.Pole Pole1 = new TowerOfHanoi.Pole(new Point(370, 276));
-            TowerOfHanoi.Pole Pole2 = new TowerOfHanoi.Pole(new Point(520, 276));
-            TowerOfHanoi.Pole Pole3 = new TowerOfHanoi.Pole(new Point(670, 276));
+            TowerOfHanoi.Pole Pole1 = new TowerOfHanoi.Pole(new Point(566, 398));
+            TowerOfHanoi.Pole Pole2 = new TowerOfHanoi.Pole(new Point(807, 398));
+            TowerOfHanoi.Pole Pole3 = new TowerOfHanoi.Pole(new Point(1060, 398));
 
             TowerOfHanoi.Disk Disk1 = new TowerOfHanoi.Disk(1);
             TowerOfHanoi.Disk Disk2 = new TowerOfHanoi.Disk(2);
@@ -32,8 +32,6 @@ namespace ThinkTankerGUI
             Pole1.DiskStack.Push(Disk1);
             Pole1.DiskStack.Push(Disk2);
             Pole1.DiskStack.Push(Disk3);
-
-            Disk1.SetPictureBox(Disk1);
         }
 
 
@@ -56,6 +54,27 @@ namespace ThinkTankerGUI
         private void TowerOfHanoiBT_Load(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void Pole2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Disk3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Disk1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RestartBTN_Click(object sender, EventArgs e)
+        {
+            InitializeGame();
         }
     }
 }
