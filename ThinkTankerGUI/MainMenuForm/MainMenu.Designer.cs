@@ -113,7 +113,7 @@
             ExitB.FlatStyle = FlatStyle.Flat;
             ExitB.ForeColor = Color.White;
             ExitB.Image = (Image)resources.GetObject("ExitB.Image");
-            ExitB.Location = new Point(177, 566);
+            ExitB.Location = new Point(200, 622);
             ExitB.Name = "ExitB";
             ExitB.Size = new Size(79, 92);
             ExitB.TabIndex = 2;
@@ -131,7 +131,7 @@
             BrainProbeB.FlatStyle = FlatStyle.Flat;
             BrainProbeB.Font = new Font("Impact", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
             BrainProbeB.ForeColor = Color.FromArgb(251, 133, 0);
-            BrainProbeB.Location = new Point(77, 575);
+            BrainProbeB.Location = new Point(77, 498);
             BrainProbeB.Margin = new Padding(3, 4, 3, 4);
             BrainProbeB.Name = "BrainProbeB";
             BrainProbeB.Size = new Size(330, 100);
@@ -139,7 +139,6 @@
             BrainProbeB.Text = "Brain Probe";
             BrainProbeB.TextColor = Color.FromArgb(251, 133, 0);
             BrainProbeB.UseVisualStyleBackColor = false;
-            
             // 
             // BrainTeasersB
             // 
@@ -152,7 +151,7 @@
             BrainTeasersB.FlatStyle = FlatStyle.Flat;
             BrainTeasersB.Font = new Font("Impact", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
             BrainTeasersB.ForeColor = Color.FromArgb(251, 133, 0);
-            BrainTeasersB.Location = new Point(77, 420);
+            BrainTeasersB.Location = new Point(77, 355);
             BrainTeasersB.Margin = new Padding(3, 4, 3, 4);
             BrainTeasersB.Name = "BrainTeasersB";
             BrainTeasersB.Size = new Size(330, 100);
@@ -167,7 +166,7 @@
             hoverTxt.AutoSize = true;
             hoverTxt.Location = new Point(606, 219);
             hoverTxt.Name = "hoverTxt";
-            hoverTxt.Size = new Size(0, 15);
+            hoverTxt.Size = new Size(0, 20);
             hoverTxt.TabIndex = 1;
             // 
             // MainMenu
@@ -175,7 +174,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(2, 48, 71);
-            ClientSize = new Size(1264, 749);
+            ClientSize = new Size(1264, 744);
             Controls.Add(hoverTxt);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
