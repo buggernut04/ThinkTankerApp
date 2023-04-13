@@ -176,7 +176,7 @@
             ClientSize = new Size(1264, 749);
             Controls.Add(hoverTxt);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "MainMenu";

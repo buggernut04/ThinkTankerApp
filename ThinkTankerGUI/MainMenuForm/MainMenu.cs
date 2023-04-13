@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.TowerOfHanoi;
+using ThinkTankerGUI.OnClick;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
@@ -15,6 +17,7 @@ namespace ThinkTankerGUI.MainMenuForm
     public partial class MainMenu : Form
     {
         public static TowerOfHanoiBT TOH = new();
+        public static BTOnClick BTC = new();
 
         public MainMenu()
         {
@@ -27,8 +30,8 @@ namespace ThinkTankerGUI.MainMenuForm
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            /*MainMenu.TOH.ShowDialog(this);
-            this.ShowDialog();*/
+            MainMenu.BTC.ShowDialog(this);
+            this.ShowDialog();
         }
 
         private void BrainTeasersB_MouseHover(object sender, EventArgs e)
