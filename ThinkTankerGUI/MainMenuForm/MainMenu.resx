@@ -60,6 +60,24 @@
   <metadata name="ExitB.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ExitB.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAsCAYAAADxRjE/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAKESURBVGhDxdhBjtQwEIVhH49zcQtvuAKX4AAsRmxAYoEQ
+        QoxAYgO74KqJrXL5T7rsSQ+LL0rc9WJP4zim07Ztl/qd0+OWy6nxkNMrql2FjcvcYK0rB46NKz7l9JoG
+        24HcCmxc8TenPzhQC3IrsHEJDdKj3AJsXEKD9Ci3ABsrmac/cnov6PMODdKjnPElp7eR/rBRn3To9HtO
+        H6heQf2AcsVRfx9zekP1Q4OCG1Rfc3o3m2koJ6h2RwPvLhQEBz7zjNzPnD5jreHX+HYiQmutMJmG6rzV
+        nDCZdqKomNjMTBZy9Non+oXuGT2I6LesneyZDtQOIHf0EKI9owdFReBwDwG1A8oJqgX12y5X8b9WX9W2
+        MwvqB5QrZvsvV/F5VTtBVO9Rbhfau4hSK8dQh4dzuYLMgHIWZRyZIuUsVnw4lyvIDChnUcaRLy/+9FIn
+        FmU8yhm656CcEy70HQwo41HOo5wTGvStXZeQHRplO5AbUM65bNAKstXhRsuDrHfpoI+ej185faN6BHkv
+        NGjdiVEHB2RZkvvqlIHPT0H/3nUP4lWob6ccY4Xdje8ksrcW5VjAB57dGt4N9OvJzChnsWLlO7nQzEtO
+        jrE1trj5Kn8O6A+VWjk+oQJS6y+kazj15dRVrFw9BaNbw9M99YLwtBB7Rg+z4amXxYmZPu3WWA9VeCNe
+        meys6JRoTLadNBQ4Ed5T7Kamw87/stVOKv1FB4K3yD/f2VoefvMSd6/uoqHgf0LLbHfRgRu8tLkfICu4
+        0Us5GrDAxg7c8N7OBiywcQA3vpfIxgwbyeqqMgX6Jdh4Jvxr1ITZbS82Rky/0Rz542k5i8DGWfJN3fpf
+        h2wR9AUD+Tlb+geM2ly+wnNHTAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="BrainProbeB.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
