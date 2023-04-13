@@ -93,9 +93,9 @@
             // checkPBM
             // 
             checkPBM.Image = (Image)resources.GetObject("checkPBM.Image");
-            checkPBM.Location = new Point(440, 289);
+            checkPBM.Location = new Point(456, 289);
             checkPBM.Name = "checkPBM";
-            checkPBM.Size = new Size(104, 76);
+            checkPBM.Size = new Size(88, 76);
             checkPBM.SizeMode = PictureBoxSizeMode.StretchImage;
             checkPBM.TabIndex = 5;
             checkPBM.TabStop = false;

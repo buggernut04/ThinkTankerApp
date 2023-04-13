@@ -93,9 +93,9 @@
             // checkPB
             // 
             checkPB.Image = (Image)resources.GetObject("checkPB.Image");
-            checkPB.Location = new Point(440, 289);
+            checkPB.Location = new Point(456, 289);
             checkPB.Name = "checkPB";
-            checkPB.Size = new Size(104, 76);
+            checkPB.Size = new Size(88, 76);
             checkPB.SizeMode = PictureBoxSizeMode.StretchImage;
             checkPB.TabIndex = 5;
             checkPB.TabStop = false;

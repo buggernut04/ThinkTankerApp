@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboardForm));
             panel1 = new Panel();
             difficultBT = new Button();
             moderateBT = new Button();
@@ -43,13 +44,19 @@
             difficultForm1 = new DifficultForm();
             quiztimer = new System.Windows.Forms.Timer(components);
             scoreForm1 = new ScoreForm();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(2, 48, 71);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(difficultBT);
             panel1.Controls.Add(moderateBT);
             panel1.Controls.Add(easyBT);
@@ -209,11 +216,31 @@
             scoreForm1.Size = new Size(1152, 671);
             scoreForm1.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(36, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(186, 167);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(36, 608);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(183, 170);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
             // dashboardForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(128, 128, 255);
+            BackColor = Color.FromArgb(251, 133, 0);
             ClientSize = new Size(1288, 830);
             Controls.Add(difficultForm1);
             Controls.Add(moderateForm1);
@@ -229,6 +256,8 @@
             Text = "Category";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -248,5 +277,7 @@
         private ScoreForm scoreForm1;
         private Button exitBT;
         private Button outBT;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
     }
 }
