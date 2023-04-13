@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ThinkTankerGUI.MatchingGame;
 using ThinkTankerGUI.TowerOfHanoi;
 
 namespace ThinkTankerGUI.MainMenuForm
@@ -14,8 +15,7 @@ namespace ThinkTankerGUI.MainMenuForm
 
     public partial class MainMenu : Form
     {
-        public static TowerOfHanoiBT TOH = new();
-
+        public static Form1 matchGame = new();
         public MainMenu()
         {
             InitializeComponent();
@@ -27,37 +27,11 @@ namespace ThinkTankerGUI.MainMenuForm
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            /*MainMenu.TOH.ShowDialog(this);
-            this.ShowDialog();*/
+            this.Hide();
+            MainMenu.matchGame.ShowDialog(this);
+            this.Show();
         }
 
-        private void BrainTeasersB_MouseHover(object sender, EventArgs e)
-        {
-            //Hover Text
-            hoverTxt.Text = "A series of minigames\n to practice your \n problem solving skills!";
-            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
-            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            hoverTxt.ForeColor = Color.PeachPuff;
-            hoverTxt.Location = new Point(601, 268);
-        }
 
-        private void BrainTeasersB_MouseLeave(object sender, EventArgs e)
-        {
-            hoverTxt.Text = "";
-        }
-
-        private void BrainProbeB_MouseHover(object sender, EventArgs e)
-        {
-            hoverTxt.Text = "Test your knowledge\n with our quizzes\n of various difficulty";
-            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
-            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            hoverTxt.ForeColor = Color.PeachPuff;
-            hoverTxt.Location = new Point(601, 268);
-        }
-
-        private void BrainProbeB_MouseLeave(object sender, EventArgs e)
-        {
-            hoverTxt.Text = "";
-        }
     }
 }
