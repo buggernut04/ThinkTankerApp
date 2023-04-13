@@ -330,12 +330,7 @@ namespace ThinkTankerGUI.MatchingGame
 
         }
 
-        private void exitBT_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void extbttn_Click(object sender, EventArgs e)
         {
             this.Close();
         }

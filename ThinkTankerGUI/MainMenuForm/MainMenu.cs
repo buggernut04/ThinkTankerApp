@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThinkTankerGUI.MatchingGame;
-using ThinkTankerGUI.TowerOfHanoi;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
@@ -29,9 +28,9 @@ namespace ThinkTankerGUI.MainMenuForm
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            /*this.Hide();
             MainMenu.matchGame.ShowDialog(this);
-            this.Show();
+            this.Show();*/
         }
 
         private void ExitB_Click(object sender, EventArgs e)

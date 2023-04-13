@@ -60,7 +60,7 @@
             label8 = new Label();
             label9 = new Label();
             progressBar2 = new ProgressBar();
-            button1 = new Button();
+            extbttn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -463,20 +463,20 @@
             progressBar2.Size = new Size(305, 12);
             progressBar2.TabIndex = 29;
             // 
-            // button1
+            // extbttn
             // 
-            button1.FlatAppearance.BorderColor = Color.FromArgb(128, 255, 255);
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.FromArgb(128, 255, 255);
-            button1.Location = new Point(939, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(31, 29);
-            button1.TabIndex = 30;
-            button1.Text = "X";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            extbttn.FlatAppearance.BorderColor = Color.FromArgb(128, 255, 255);
+            extbttn.FlatAppearance.BorderSize = 2;
+            extbttn.FlatStyle = FlatStyle.Flat;
+            extbttn.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            extbttn.ForeColor = Color.FromArgb(128, 255, 255);
+            extbttn.Location = new Point(939, 12);
+            extbttn.Name = "extbttn";
+            extbttn.Size = new Size(31, 29);
+            extbttn.TabIndex = 30;
+            extbttn.Text = "X";
+            extbttn.UseVisualStyleBackColor = true;
+            extbttn.Click += extbttn_Click;
             // 
             // Form1
             // 
@@ -486,7 +486,7 @@
             BackColor = Color.FromArgb(64, 0, 64);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(982, 614);
-            Controls.Add(button1);
+            Controls.Add(extbttn);
             Controls.Add(progressBar2);
             Controls.Add(label9);
             Controls.Add(label8);
@@ -577,7 +577,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ProgressBar progressBar2;
-        private Button button1;
+        private Button extbttn;
     }
 }
 
