@@ -2,6 +2,7 @@
 using ThinkTankerClasses;
 using ThinkTankerClasses.Databases;
 using ThinkTankerGUI.SignUpForm;
+using ThinkTankerGUI.MainMenuForm;
 
 namespace ThinkTankerGUI
 {
@@ -21,7 +22,7 @@ namespace ThinkTankerGUI
             ProjectDatabase.LoadQuizRecord();
             ProjectDatabase.LoadMatchingGameRecord();
 
-            //Application.Run(new LogIn());
+            Application.Run(new MainMenu());
 
             //Application.Run(new SignUp());
 

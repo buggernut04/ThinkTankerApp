@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             panel1 = new Panel();
             gradientCus1 = new Custom_Properties.GradientCus();
             usernameLB = new Label();
@@ -35,6 +36,7 @@
             ExitB = new Custom_Properties.ButtonCus();
             BrainProbeB = new Custom_Properties.ButtonCus();
             BrainTeasersB = new Custom_Properties.ButtonCus();
+            hoverTxt = new Label();
             panel1.SuspendLayout();
             gradientCus1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureboxCus1).BeginInit();
@@ -107,6 +109,7 @@
             ExitB.FlatAppearance.BorderSize = 0;
             ExitB.FlatStyle = FlatStyle.Flat;
             ExitB.ForeColor = Color.White;
+            ExitB.Image = (Image)resources.GetObject("ExitB.Image");
             ExitB.Location = new Point(177, 566);
             ExitB.Name = "ExitB";
             ExitB.Size = new Size(69, 69);
@@ -132,6 +135,8 @@
             BrainProbeB.Text = "Brain Probe";
             BrainProbeB.TextColor = Color.FromArgb(251, 133, 0);
             BrainProbeB.UseVisualStyleBackColor = false;
+            BrainProbeB.MouseLeave += BrainProbeB_MouseLeave;
+            BrainProbeB.MouseHover += BrainProbeB_MouseHover;
             // 
             // BrainTeasersB
             // 
@@ -152,6 +157,16 @@
             BrainTeasersB.TextColor = Color.FromArgb(251, 133, 0);
             BrainTeasersB.UseVisualStyleBackColor = false;
             BrainTeasersB.Click += BrainTeasersB_Click;
+            BrainTeasersB.MouseLeave += BrainTeasersB_MouseLeave;
+            BrainTeasersB.MouseHover += BrainTeasersB_MouseHover;
+            // 
+            // hoverTxt
+            // 
+            hoverTxt.AutoSize = true;
+            hoverTxt.Location = new Point(606, 219);
+            hoverTxt.Name = "hoverTxt";
+            hoverTxt.Size = new Size(0, 15);
+            hoverTxt.TabIndex = 1;
             // 
             // MainMenu
             // 
@@ -159,6 +174,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(2, 48, 71);
             ClientSize = new Size(1264, 749);
+            Controls.Add(hoverTxt);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
@@ -171,6 +187,7 @@
             gradientCus1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureboxCus1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -182,5 +199,6 @@
         private Custom_Properties.GradientCus gradientCus1;
         private PictureboxCus pictureboxCus1;
         private Label usernameLB;
+        private Label hoverTxt;
     }
 }

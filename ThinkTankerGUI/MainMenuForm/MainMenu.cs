@@ -22,13 +22,42 @@ namespace ThinkTankerGUI.MainMenuForm
         }
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            this.Owner.Hide();
+            //this.Owner.Hide();
         }
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            MainMenu.TOH.ShowDialog(this);
-            this.ShowDialog();
+            /*MainMenu.TOH.ShowDialog(this);
+            this.ShowDialog();*/
+        }
+
+        private void BrainTeasersB_MouseHover(object sender, EventArgs e)
+        {
+            //Hover Text
+            hoverTxt.Text = "A series of minigames\n to practice your \n problem solving skills!";
+            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
+            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            hoverTxt.ForeColor = Color.PeachPuff;
+            hoverTxt.Location = new Point(601, 268);
+        }
+
+        private void BrainTeasersB_MouseLeave(object sender, EventArgs e)
+        {
+            hoverTxt.Text = "";
+        }
+
+        private void BrainProbeB_MouseHover(object sender, EventArgs e)
+        {
+            hoverTxt.Text = "Test your knowledge\n with our quizzes\n of various difficulty";
+            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
+            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
+            hoverTxt.ForeColor = Color.PeachPuff;
+            hoverTxt.Location = new Point(601, 268);
+        }
+
+        private void BrainProbeB_MouseLeave(object sender, EventArgs e)
+        {
+            hoverTxt.Text = "";
         }
     }
 }
