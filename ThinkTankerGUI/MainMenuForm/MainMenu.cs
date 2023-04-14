@@ -18,7 +18,8 @@ namespace ThinkTankerGUI.MainMenuForm
     {
         public static Form1 matchGame = new();
         public static dashboardForm dashBoardForm = new();
-        public static TowerOfHanoiBT TOH = new();
+        public static BTOnClick BTC = new();
+        public static BPOnClick BPC = new();
         public MainMenu()
         {
             InitializeComponent();
