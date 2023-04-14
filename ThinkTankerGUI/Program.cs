@@ -21,26 +21,11 @@ namespace ThinkTankerGUI
             // Please don't change
             // If mo run mo ari, e comment ras ubos.
 
-            /*ProjectDatabase.LoadQuizRecord();
+            ProjectDatabase.LoadQuizRecord();
             ProjectDatabase.LoadMatchingGameRecord();
             ProjectDatabase.LoadUserRecord();
 
-
-            ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "buggernut04", "Gwapoko-123"));
-            ProjectDatabase.SaveUserRecord();*/
-
-          /*  ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "buggernut04", "Gwapoko-123"));
-            ProjectDatabase.SaveUserRecord();*/
-
-
             Application.Run(new LogIn());
-
-            //Application.Run(new MainMenu());
-
-            //Application.Run(new SignUp());
-
-            //Application.Run(new TowerOfHanoiBT());
-            //Application.Run(new MatchingGame.Form1());
         }
     }
 }

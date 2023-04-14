@@ -57,8 +57,7 @@ namespace ThinkTankerGUI.SignUpForm
                 ProjectDatabase.SaveUserRecord();
                 MessageBox.Show("Successfully Created Account!");
 
-                SignUp.logIn.ShowDialog(this);
-                this.Show();
+                this.Close();
             }
         }
     }

@@ -12,20 +12,20 @@ namespace ThinkTankerClasses.Databases
 {
     public class ProjectDatabase
     {
-        private static string rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
+        private static string rootDirectory = @"C:\Users\hp\Documents\ThinkTankerApp\ThinkTankerClasses\Databases\";
 
         private static string userListFileName = "userrecord.json";
         private static string userCombinePath = Path.Combine(rootDirectory, userListFileName);
         public static List<User> UserRecord = new List<User>();
 
 
-        /*private static string quizRecordFileName = "quizrecord.thinktanker";
+        private static string quizRecordFileName = "quizrecord.json";
         private static string quizCombinePath = Path.Combine(rootDirectory, quizRecordFileName);
         public static List<QuizUserRecord> QuizRecord = new List<QuizUserRecord>();
 
-        private static string matchingGameRecordFileName = "matchGameRec.thinktanker";
+        private static string matchingGameRecordFileName = "matchGameRec.json";
         private static string matchCombinePath = Path.Combine(rootDirectory, matchingGameRecordFileName);
-        public static List<MatchingGameRecord> MatchingGameRecord = new List<MatchingGameRecord>();*/
+        public static List<MatchingGameRecord> MatchingGameRecord = new List<MatchingGameRecord>();
 
         public static void SaveUserRecord()
         {
@@ -38,11 +38,11 @@ namespace ThinkTankerClasses.Databases
             if (!File.Exists(Path.Combine(userCombinePath)))
                 using (StreamWriter writer = new StreamWriter(userCombinePath));
 
-            string json = File.ReadAllText(userCombinePath);
+            dynamic json = File.ReadAllText(userCombinePath);
             UserRecord = JsonConvert.DeserializeObject<List<User>>(json);
         }
 
-       /* public static void SaveQuizRecord()
+        public static void SaveQuizRecord()
         {
             string json = JsonConvert.SerializeObject(QuizRecord);
             File.WriteAllText(quizCombinePath, json);
@@ -51,7 +51,7 @@ namespace ThinkTankerClasses.Databases
         public static void LoadQuizRecord()
         {
             if (!File.Exists(quizCombinePath))
-                using (StreamWriter writer = new StreamWriter(quizCombinePath));
+                using (StreamWriter writer = new StreamWriter(quizCombinePath)) ;
 
             string json = File.ReadAllText(quizCombinePath);
             QuizRecord = Newtonsoft.Json.JsonConvert.DeserializeObject<List<QuizUserRecord>>(json);
@@ -66,11 +66,11 @@ namespace ThinkTankerClasses.Databases
         public static void LoadMatchingGameRecord()
         {
             if (!File.Exists(matchCombinePath))
-                using (StreamWriter writer = new StreamWriter(matchCombinePath)) ; 
+                using (StreamWriter writer = new StreamWriter(matchCombinePath)) ;
 
             string json = File.ReadAllText(matchCombinePath);
             MatchingGameRecord = Newtonsoft.Json.JsonConvert.DeserializeObject<List<MatchingGameRecord>>(json);
         }
-*/
+
     }
 }

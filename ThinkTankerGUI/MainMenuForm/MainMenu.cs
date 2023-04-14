@@ -58,7 +58,6 @@ namespace ThinkTankerGUI.MainMenuForm
             this.Show();
             buttonCus1.Visible = false;
             buttonCus2.Visible = false;
-
         }
 
         private void buttonCus2_Click(object sender, EventArgs e)
