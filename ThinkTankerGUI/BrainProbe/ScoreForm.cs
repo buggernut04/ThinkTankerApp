@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BrainProbe
+namespace ThinkTankerGUI.BrainProbe
 {
     public partial class ScoreForm : UserControl
     {

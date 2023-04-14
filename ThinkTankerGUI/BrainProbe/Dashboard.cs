@@ -1,4 +1,4 @@
-namespace BrainProbe
+namespace ThinkTankerGUI.BrainProbe
 {
     public partial class dashboardForm : Form
     {

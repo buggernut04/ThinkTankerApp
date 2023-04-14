@@ -7,10 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ThinkTankerGUI.OnClick;
-using ThinkTankerGUI.TowerOfHanoi;
-using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.MatchingGame;
+using ThinkTankerGUI.TowerOfHanoi;
+using ThinkTankerGUI.BrainProbe;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
@@ -19,12 +18,12 @@ namespace ThinkTankerGUI.MainMenuForm
     {
         public static Form1 matchGame = new();
         public static dashboardForm dashBoardForm = new();
-        public static BTOnClick BTC = new();
-        public static BPOnClick BPC = new();
-
+        public static TowerOfHanoiBT toh = new();
         public MainMenu()
         {
             InitializeComponent();
+            buttonCus1.Visible = false;
+            buttonCus2.Visible = false;
         }
         private void MainMenu_Load(object sender, EventArgs e)
         {
@@ -33,40 +32,42 @@ namespace ThinkTankerGUI.MainMenuForm
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            MainMenu.BTC.ShowDialog(this);
-            this.ShowDialog();
+            
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            buttonCus1.Visible = true;
+            buttonCus2.Visible = true;
         }
 
-        private void BrainTeasersB_MouseHover(object sender, EventArgs e)
+        private void ExitB_Click(object sender, EventArgs e)
         {
-            //Hover Text
-            hoverTxt.Text = "A series of minigames\n to practice your \n problem solving skills!";
-            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
-            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            hoverTxt.ForeColor = Color.PeachPuff;
-            hoverTxt.Location = new Point(601, 268);
+            this.Close();
         }
-        private void BrainTeasersB_MouseLeave(object sender, EventArgs e)
-        {
-            hoverTxt.Text = "";
-        }
+
         private void BrainProbeB_Click(object sender, EventArgs e)
         {
-            MainMenu.BPC.ShowDialog(this);
-            this.ShowDialog();
-        }
-        private void BrainProbeB_MouseHover(object sender, EventArgs e)
-        {
-            hoverTxt.Text = "Test your knowledge\n with our quizes \n of various difficulties!";
-            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
-            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            hoverTxt.ForeColor = Color.PeachPuff;
-            hoverTxt.Location = new Point(601, 268);
+            this.Hide();
+            MainMenu.dashBoardForm.ShowDialog(this);
+            this.Show();
         }
 
-        private void BrainProbeB_MouseLeave(object sender, EventArgs e)
+        private void buttonCus1_Click(object sender, EventArgs e)
         {
-            hoverTxt.Text = "";
+            this.Hide();
+            MainMenu.toh.ShowDialog(this);
+            this.Show();
+            buttonCus1.Visible = false;
+            buttonCus2.Visible = false;
+
+        }
+
+        private void buttonCus2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu.matchGame.ShowDialog(this);
+            this.Show();
+            buttonCus1.Visible = false;
+            buttonCus2.Visible = false;
         }
     }
 }
