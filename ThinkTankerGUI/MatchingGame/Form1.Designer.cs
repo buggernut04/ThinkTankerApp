@@ -476,6 +476,7 @@
             extbttn.TabIndex = 30;
             extbttn.Text = "X";
             extbttn.UseVisualStyleBackColor = true;
+            extbttn.Click += extbttn_Click;
             // 
             // Form1
             // 
