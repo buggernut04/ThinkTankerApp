@@ -10,13 +10,15 @@ using System.Windows.Forms;
 using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.TowerOfHanoi;
 using ThinkTankerGUI.OnClick;
+using ThinkTankerGUI.MatchingGame;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
 
     public partial class MainMenu : Form
     {
-        public static TowerOfHanoiBT TOH = new();
+        public static Form1 matchGame = new();
+        public static dashboardForm dashBoardForm = new();
         public static BTOnClick BTC = new();
         public static BPOnClick BPC = new();
 
