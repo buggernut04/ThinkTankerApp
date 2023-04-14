@@ -35,6 +35,13 @@
       <FileName>Moderate.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ThinkTankerClasses.Program">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="ThinkTankerClasses.TowerOfHanoi" Collapsed="true">
     <Position X="10.5" Y="4" Width="1.5" />
     <TypeIdentifier>
@@ -43,24 +50,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ThinkTankerClasses.User" Collapsed="true">
-    <Position X="11.25" Y="1.75" Width="1.5" />
+    <Position X="10.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAQAQAAQAAAAAAAASAAAAAAAAAAA=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ThinkTankerApp.Quiz">
-    <Position X="13.25" Y="1.75" Width="1.5" />
+  <Class Name="ThinkTankerApp.Quiz" Collapsed="true">
+    <Position X="14.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Quiz.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Items" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ThinkTankerApp.TestItem" Collapsed="true">
-    <Position X="15" Y="1.75" Width="1.5" />
+    <Position X="14.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAABEAABAAAAAAAA=</HashCode>
       <FileName>TestItem.cs</FileName>
