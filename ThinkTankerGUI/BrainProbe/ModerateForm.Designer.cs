@@ -43,7 +43,7 @@
             // prevBTM
             // 
             prevBTM.Image = (Image)resources.GetObject("prevBTM.Image");
-            prevBTM.Location = new Point(89, 94);
+            prevBTM.Location = new Point(91, 41);
             prevBTM.Name = "prevBTM";
             prevBTM.Size = new Size(82, 64);
             prevBTM.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -54,7 +54,7 @@
             // nextBTM
             // 
             nextBTM.Image = (Image)resources.GetObject("nextBTM.Image");
-            nextBTM.Location = new Point(813, 94);
+            nextBTM.Location = new Point(813, 41);
             nextBTM.Name = "nextBTM";
             nextBTM.Size = new Size(82, 64);
             nextBTM.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -64,17 +64,22 @@
             // 
             // easyAnswerTBM
             // 
-            easyAnswerTBM.Location = new Point(392, 328);
+            easyAnswerTBM.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            easyAnswerTBM.Location = new Point(345, 315);
             easyAnswerTBM.Name = "easyAnswerTBM";
             easyAnswerTBM.PlaceholderText = "Enter your answer here.";
-            easyAnswerTBM.Size = new Size(194, 27);
+            easyAnswerTBM.Size = new Size(298, 38);
             easyAnswerTBM.TabIndex = 2;
             // 
             // submitBTM
             // 
-            submitBTM.Location = new Point(440, 361);
+            submitBTM.FlatAppearance.BorderSize = 2;
+            submitBTM.FlatStyle = FlatStyle.Flat;
+            submitBTM.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            submitBTM.ForeColor = Color.Black;
+            submitBTM.Location = new Point(426, 371);
             submitBTM.Name = "submitBTM";
-            submitBTM.Size = new Size(94, 29);
+            submitBTM.Size = new Size(140, 57);
             submitBTM.TabIndex = 3;
             submitBTM.Text = "Submit";
             submitBTM.UseVisualStyleBackColor = true;
@@ -82,7 +87,7 @@
             // 
             // label1M
             // 
-            label1M.Font = new Font("Segoe UI Symbol", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1M.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1M.Location = new Point(205, 144);
             label1M.Name = "label1M";
             label1M.Size = new Size(582, 142);

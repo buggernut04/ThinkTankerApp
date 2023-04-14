@@ -43,7 +43,7 @@
             // prevBT
             // 
             prevBT.Image = (Image)resources.GetObject("prevBT.Image");
-            prevBT.Location = new Point(89, 94);
+            prevBT.Location = new Point(91, 41);
             prevBT.Name = "prevBT";
             prevBT.Size = new Size(82, 64);
             prevBT.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -54,7 +54,7 @@
             // nextBT
             // 
             nextBT.Image = (Image)resources.GetObject("nextBT.Image");
-            nextBT.Location = new Point(813, 94);
+            nextBT.Location = new Point(813, 41);
             nextBT.Name = "nextBT";
             nextBT.Size = new Size(82, 64);
             nextBT.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -64,17 +64,21 @@
             // 
             // easyAnswerTB
             // 
-            easyAnswerTB.Location = new Point(392, 328);
+            easyAnswerTB.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            easyAnswerTB.Location = new Point(345, 315);
             easyAnswerTB.Name = "easyAnswerTB";
             easyAnswerTB.PlaceholderText = "Enter your answer here.";
-            easyAnswerTB.Size = new Size(194, 27);
+            easyAnswerTB.Size = new Size(298, 38);
             easyAnswerTB.TabIndex = 2;
             // 
             // submitBT
             // 
-            submitBT.Location = new Point(440, 361);
+            submitBT.FlatAppearance.BorderSize = 2;
+            submitBT.FlatStyle = FlatStyle.Flat;
+            submitBT.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            submitBT.Location = new Point(426, 371);
             submitBT.Name = "submitBT";
-            submitBT.Size = new Size(94, 29);
+            submitBT.Size = new Size(140, 57);
             submitBT.TabIndex = 3;
             submitBT.Text = "Submit";
             submitBT.UseVisualStyleBackColor = true;
@@ -82,7 +86,7 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI Symbol", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(205, 144);
             label1.Name = "label1";
             label1.Size = new Size(582, 142);
@@ -93,7 +97,7 @@
             // checkPB
             // 
             checkPB.Image = (Image)resources.GetObject("checkPB.Image");
-            checkPB.Location = new Point(456, 289);
+            checkPB.Location = new Point(448, 289);
             checkPB.Name = "checkPB";
             checkPB.Size = new Size(88, 76);
             checkPB.SizeMode = PictureBoxSizeMode.StretchImage;

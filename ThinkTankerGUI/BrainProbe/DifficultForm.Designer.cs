@@ -43,7 +43,7 @@
             // prevBTD
             // 
             prevBTD.Image = (Image)resources.GetObject("prevBTD.Image");
-            prevBTD.Location = new Point(89, 94);
+            prevBTD.Location = new Point(91, 41);
             prevBTD.Name = "prevBTD";
             prevBTD.Size = new Size(82, 64);
             prevBTD.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -54,7 +54,7 @@
             // nextBTD
             // 
             nextBTD.Image = (Image)resources.GetObject("nextBTD.Image");
-            nextBTD.Location = new Point(813, 94);
+            nextBTD.Location = new Point(813, 41);
             nextBTD.Name = "nextBTD";
             nextBTD.Size = new Size(82, 64);
             nextBTD.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -64,17 +64,22 @@
             // 
             // easyAnswerTBD
             // 
-            easyAnswerTBD.Location = new Point(392, 328);
+            easyAnswerTBD.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            easyAnswerTBD.Location = new Point(345, 315);
             easyAnswerTBD.Name = "easyAnswerTBD";
             easyAnswerTBD.PlaceholderText = "Enter your answer here.";
-            easyAnswerTBD.Size = new Size(194, 27);
+            easyAnswerTBD.Size = new Size(298, 38);
             easyAnswerTBD.TabIndex = 2;
             // 
             // submitBTD
             // 
-            submitBTD.Location = new Point(440, 361);
+            submitBTD.FlatAppearance.BorderSize = 2;
+            submitBTD.FlatStyle = FlatStyle.Flat;
+            submitBTD.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            submitBTD.ForeColor = Color.Black;
+            submitBTD.Location = new Point(426, 371);
             submitBTD.Name = "submitBTD";
-            submitBTD.Size = new Size(94, 29);
+            submitBTD.Size = new Size(140, 57);
             submitBTD.TabIndex = 3;
             submitBTD.Text = "Submit";
             submitBTD.UseVisualStyleBackColor = true;
@@ -82,7 +87,7 @@
             // 
             // label1D
             // 
-            label1D.Font = new Font("Segoe UI Symbol", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1D.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1D.Location = new Point(205, 144);
             label1D.Name = "label1D";
             label1D.Size = new Size(582, 142);
@@ -93,7 +98,7 @@
             // checkPBD
             // 
             checkPBD.Image = (Image)resources.GetObject("checkPBD.Image");
-            checkPBD.Location = new Point(456, 289);
+            checkPBD.Location = new Point(448, 289);
             checkPBD.Name = "checkPBD";
             checkPBD.Size = new Size(88, 76);
             checkPBD.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -105,9 +110,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(checkPBD);
+            Controls.Add(easyAnswerTBD);
             Controls.Add(label1D);
             Controls.Add(submitBTD);
-            Controls.Add(easyAnswerTBD);
             Controls.Add(nextBTD);
             Controls.Add(prevBTD);
             Name = "DifficultForm";
