@@ -1,5 +1,4 @@
-﻿using BrainProbe;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ThinkTankerGUI.MatchingGame;
+using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.TowerOfHanoi;
+using ThinkTankerGUI.OnClick;
+using ThinkTankerGUI.MatchingGame;
+using BrainProbe;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
@@ -20,6 +22,7 @@ namespace ThinkTankerGUI.MainMenuForm
         public static dashboardForm dashBoardForm = new();
         public static BTOnClick BTC = new();
         public static BPOnClick BPC = new();
+
         public MainMenu()
         {
             InitializeComponent();
