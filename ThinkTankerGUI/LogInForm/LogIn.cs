@@ -66,12 +66,16 @@ namespace ThinkTankerGUI.LogInForm
                     this.Show();
                     canLogin = true;
                     break;
-                }  
+                }
             }
-           
+
             if (!canLogin)
                MessageBox.Show("Invalid Username and Password!");*/
 
+
+           /* this.Hide();
+            LogIn.mainMenu.ShowDialog(this);
+            this.Show();*/
         }
 
 
