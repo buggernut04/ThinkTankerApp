@@ -12,19 +12,20 @@ namespace ThinkTankerClasses.Databases
 {
     public class ProjectDatabase
     {
-        private static string rootDirectory = @"C:\Users\hp\Documents\ThinkTankerApp\ThinkTankerClasses\Databases\";
+        //private static string rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
         private static string userListFileName = "userrecord.json";
-        private static string userCombinePath = Path.Combine(rootDirectory, userListFileName);
+        private static string userCombinePath =  Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), userListFileName);
+        //private static string userCombinePath = Path.Combine(rootDirectory, userListFileName);
         public static List<User> UserRecord = new List<User>();
 
 
         private static string quizRecordFileName = "quizrecord.json";
-        private static string quizCombinePath = Path.Combine(rootDirectory, quizRecordFileName);
+        private static string quizCombinePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), quizRecordFileName);
         public static List<QuizUserRecord> QuizRecord = new List<QuizUserRecord>();
 
         private static string matchingGameRecordFileName = "matchGameRec.json";
-        private static string matchCombinePath = Path.Combine(rootDirectory, matchingGameRecordFileName);
+        private static string matchCombinePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), matchingGameRecordFileName);
         public static List<MatchingGameRecord> MatchingGameRecord = new List<MatchingGameRecord>();
 
         public static void SaveUserRecord()

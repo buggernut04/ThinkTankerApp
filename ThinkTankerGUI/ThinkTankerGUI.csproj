@@ -18,6 +18,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="matchGameRec.json" />
+	  <None Remove="quizrecord.json" />
+	  <None Remove="userrecord.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="matchGameRec.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="quizrecord.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="userrecord.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
 		<Folder Include="Custom Properties\" />
 		<Folder Include="MatchingGame\" />
 		<Folder Include="Properties\PublishProfiles\" />
