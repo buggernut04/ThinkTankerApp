@@ -101,10 +101,10 @@
             pictureboxCus1.BorderSize = 0;
             pictureboxCus1.GradientAngle = 50F;
             pictureboxCus1.Image = (Image)resources.GetObject("pictureboxCus1.Image");
-            pictureboxCus1.Location = new Point(30, 84);
+            pictureboxCus1.Location = new Point(46, 58);
             pictureboxCus1.Margin = new Padding(3, 4, 3, 4);
             pictureboxCus1.Name = "pictureboxCus1";
-            pictureboxCus1.Size = new Size(90, 90);
+            pictureboxCus1.Size = new Size(99, 99);
             pictureboxCus1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureboxCus1.TabIndex = 0;
             pictureboxCus1.TabStop = false;
