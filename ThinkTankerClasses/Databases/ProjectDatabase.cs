@@ -39,7 +39,7 @@ namespace ThinkTankerClasses.Databases
             if (!File.Exists(Path.Combine(userCombinePath)))
                 using (StreamWriter writer = new StreamWriter(userCombinePath));
 
-            dynamic json = File.ReadAllText(userCombinePath);
+            string json = File.ReadAllText(userCombinePath);
             UserRecord = JsonConvert.DeserializeObject<List<User>>(json);
         }
 

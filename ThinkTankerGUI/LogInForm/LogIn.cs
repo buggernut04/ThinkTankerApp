@@ -26,7 +26,6 @@ namespace ThinkTankerGUI.LogInForm
             InitializeComponent();
             this.AcceptButton = signInB;
             this.FormClosing += LogIn_FormClosing;
-
         }
 
         private void LogIn_FormClosing(object? sender, FormClosingEventArgs e)
@@ -45,28 +44,28 @@ namespace ThinkTankerGUI.LogInForm
         }
         private void signInB_Click_1(object sender, EventArgs e)
         {
-            /*this.Hide();
+            this.Hide();
             LogIn.mainMenu.ShowDialog(this);
-            this.Show();*/
+            this.Show();
 
-            bool canLogin = false;
+            /* bool canLogin = false;
 
-            foreach (var u in ProjectDatabase.UserRecord)
-            {
-                if (u.CanLogIn(usernameTB.Text, passwordTB.Text))
-                {
-                    // creation partial database
+             foreach (var u in )
+             {
+                 if (u.CanLogIn(usernameTB.Text, passwordTB.Text))
+                 {
+                     // creation partial database
 
-                    this.Hide();
-                    LogIn.mainMenu.ShowDialog(this);
-                    this.Show();
-                    canLogin = true;
-                    break;
-                }
-            }
+                     this.Hide();
+                     LogIn.mainMenu.ShowDialog(this);
+                     this.Show();
+                     canLogin = true;
+                     break;
+                 }
+             }
 
-            if (!canLogin)
-                MessageBox.Show("Invalid Username and Password!");
+             if (!canLogin)
+                 MessageBox.Show("Invalid Username and Password!");*/
 
 
             /* this.Hide();

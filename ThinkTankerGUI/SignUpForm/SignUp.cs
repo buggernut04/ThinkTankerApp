@@ -52,9 +52,9 @@ namespace ThinkTankerGUI.SignUpForm
             }
             else
             {
-                ProjectDatabase.UserRecord.Add(NewUser);
+                /*ProjectDatabase.UserRecord.Add(NewUser);
 
-                ProjectDatabase.SaveUserRecord();
+                ProjectDatabase.SaveUserRecord();*/
                 MessageBox.Show("Successfully Created Account!");
 
                 this.Close();

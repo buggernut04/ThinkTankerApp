@@ -67,7 +67,7 @@ namespace ThinkTankerGUI.BrainProbe
             restart_Time();
             pauseBT.Visible = true;
             timerLabel.Visible = true;
-            seconds = 1800;
+            seconds = 1200;
             quiztimer.Start();
 
             reset();
@@ -103,7 +103,7 @@ namespace ThinkTankerGUI.BrainProbe
             restart_Time();
             pauseBT.Visible = true;
             timerLabel.Visible = true;
-            seconds = 1200;
+            seconds = 1800;
             quiztimer.Start();
 
             reset();
