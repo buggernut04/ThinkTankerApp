@@ -85,9 +85,9 @@
             usernameLB.BackColor = Color.Transparent;
             usernameLB.Font = new Font("Cascadia Code SemiBold", 23F, FontStyle.Regular, GraphicsUnit.Point);
             usernameLB.ForeColor = Color.FromArgb(255, 247, 237);
-            usernameLB.Location = new Point(126, 104);
+            usernameLB.Location = new Point(156, 74);
             usernameLB.Name = "usernameLB";
-            usernameLB.Size = new Size(321, 51);
+            usernameLB.Size = new Size(216, 41);
             usernameLB.TabIndex = 1;
             usernameLB.Text = "Welcome! User";
             // 
