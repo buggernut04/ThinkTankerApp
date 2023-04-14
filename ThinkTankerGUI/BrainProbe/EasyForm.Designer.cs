@@ -1,4 +1,4 @@
-﻿namespace BrainProbe
+﻿namespace ThinkTankerGUI.BrainProbe
 {
     partial class EasyForm
     {

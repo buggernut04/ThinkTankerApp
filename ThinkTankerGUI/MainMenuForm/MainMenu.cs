@@ -1,5 +1,4 @@
-﻿using BrainProbe;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThinkTankerGUI.MatchingGame;
 using ThinkTankerGUI.TowerOfHanoi;
+using ThinkTankerGUI.BrainProbe;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
@@ -58,7 +58,6 @@ namespace ThinkTankerGUI.MainMenuForm
             this.Show();
             buttonCus1.Visible = false;
             buttonCus2.Visible = false;
-
         }
 
         private void buttonCus2_Click(object sender, EventArgs e)

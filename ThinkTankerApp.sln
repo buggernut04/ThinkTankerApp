@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkTankerClasses", "Think
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkTankerGUI", "ThinkTankerGUI\ThinkTankerGUI.csproj", "{3CCC8DEA-1CA9-4898-AFA7-6617EDAD692D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkTankerClassTests", "ThinkTankerClassTests\ThinkTankerClassTests.csproj", "{F10741E1-56B9-4314-AB02-6749E9DAD136}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkTankerClassTests", "ThinkTankerClassTests\ThinkTankerClassTests.csproj", "{F10741E1-56B9-4314-AB02-6749E9DAD136}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

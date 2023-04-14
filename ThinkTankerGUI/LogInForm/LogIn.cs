@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Media;
@@ -19,17 +20,12 @@ namespace ThinkTankerGUI.LogInForm
     {
         public static MainMenu mainMenu = new();
         public static SignUp signUp = new();
-
+        //public static User user = new();
         public LogIn()
         {
             InitializeComponent();
             this.AcceptButton = signInB;
-
-            /*ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "buggernut04", "Gwapoko-123"));
-            ProjectDatabase.SaveUserRecord();
-            ProjectDatabase.LoadUserRecord();
-
-            this.FormClosing += LogIn_FormClosing;*/
+            this.FormClosing += LogIn_FormClosing;
 
         }
 
@@ -49,13 +45,13 @@ namespace ThinkTankerGUI.LogInForm
         }
         private void signInB_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
+            /*this.Hide();
             LogIn.mainMenu.ShowDialog(this);
-            this.Show();
+            this.Show();*/
 
-            /*bool canLogin = false;
-            
-            foreach(var u in ProjectDatabase.UserRecord)
+            bool canLogin = false;
+
+            foreach (var u in ProjectDatabase.UserRecord)
             {
                 if (u.CanLogIn(usernameTB.Text, passwordTB.Text))
                 {
@@ -66,12 +62,16 @@ namespace ThinkTankerGUI.LogInForm
                     this.Show();
                     canLogin = true;
                     break;
-                }  
+                }
             }
-           
-            if (!canLogin)
-               MessageBox.Show("Invalid Username and Password!");*/
 
+            if (!canLogin)
+                MessageBox.Show("Invalid Username and Password!");
+
+
+            /* this.Hide();
+             LogIn.mainMenu.ShowDialog(this);
+             this.Show();*/
         }
 
 
