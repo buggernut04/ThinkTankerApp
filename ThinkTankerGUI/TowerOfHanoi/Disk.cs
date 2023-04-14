@@ -19,14 +19,14 @@ namespace ThinkTankerGUI.TowerOfHanoi
             this.Priority = priority;
         }
 
-        /*public void SetPictureBox(PictureBox pb)
+        public void SetPictureBox(PictureBox pb)
         {
             this.PictureBox = pb;
             this.PictureBox.BackColor = colors[counter++];
             this.PictureBox.Size = new Size(70 + (this.Priority * 25), 20);
             this.PictureBox.Location = new Point(this.PictureBox.Location.X, this.PictureBox.Location.Y);
             this.PictureBox.Tag = this;
-        }*/
+        }
 
     }
 }

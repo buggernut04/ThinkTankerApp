@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TowerOfHanoiBT));
             gradientCus1 = new Custom_Properties.GradientCus();
             RestartBTN = new Custom_Properties.ButtonCus();
             BrainTeasersB = new Custom_Properties.ButtonCus();
@@ -40,6 +41,7 @@
             Disk1 = new PictureBox();
             Disk2 = new PictureBox();
             Disk3 = new PictureBox();
+            pictureBox1 = new PictureBox();
             gradientCus1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureboxCus1).BeginInit();
             panel1.SuspendLayout();
@@ -49,6 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)Disk1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Disk2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Disk3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // gradientCus1
@@ -216,12 +219,23 @@
             Disk3.TabStop = false;
             Disk3.Tag = "Disk";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(492, 150);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(331, 299);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // TowerOfHanoiBT
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(2, 48, 71);
             ClientSize = new Size(1010, 538);
+            Controls.Add(pictureBox1);
             Controls.Add(Disk3);
             Controls.Add(Disk2);
             Controls.Add(Disk1);
@@ -246,6 +260,7 @@
             ((System.ComponentModel.ISupportInitialize)Disk1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Disk2).EndInit();
             ((System.ComponentModel.ISupportInitialize)Disk3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -264,5 +279,6 @@
         private PictureBox Disk2;
         private PictureBox Disk3;
         private Custom_Properties.ButtonCus RestartBTN;
+        private PictureBox pictureBox1;
     }
 }

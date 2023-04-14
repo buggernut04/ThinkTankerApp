@@ -20,6 +20,7 @@
 	<ItemGroup>
 		<Folder Include="Custom Properties\" />
 		<Folder Include="MatchingGame\" />
+		<Folder Include="BrainProbe\" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -139,6 +139,7 @@
             BrainProbeB.Click += BrainProbeB_Click;
             BrainProbeB.MouseLeave += BrainProbeB_MouseLeave;
             BrainProbeB.MouseHover += BrainProbeB_MouseHover;
+
             // 
             // BrainTeasersB
             // 
@@ -159,8 +160,7 @@
             BrainTeasersB.TextColor = Color.FromArgb(251, 133, 0);
             BrainTeasersB.UseVisualStyleBackColor = false;
             BrainTeasersB.Click += BrainTeasersB_Click;
-            BrainTeasersB.MouseLeave += BrainTeasersB_MouseLeave;
-            BrainTeasersB.MouseHover += BrainTeasersB_MouseHover;
+
             // 
             // hoverTxt
             // 

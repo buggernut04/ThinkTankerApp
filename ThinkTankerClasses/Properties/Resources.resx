@@ -117,22 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ExitB.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAsCAYAAADxRjE/AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAoRJREFUaEPF2EGO1DAQhWEfj3NxC2+4ApfgACxGbEBigRBCjEBiA7vgqomtcvlP
-        uuxJD4svStz1Yk/jOKbTtm2X+p3T45bLqfGQ0yuqXYWNy9xgrSsHjo0rPuX0mgbbgdwKbFzxN6c/OFAL
-        ciuwcQkN0qPcAmxcQoP0KLcAGyuZpz9yei/o8w4N0qOc8SWnt5H+sFGfdOj0e04fqF5B/YByxVF/H3N6
-        Q/VDg4IbVF9zejebaSgnqHZHA+8uFAQHPvOM3M+cPmOt4df4diJCa60wmYbqvNWcMJl2oqiY2MxMFnL0
-        2if6he4ZPYjot6yd7JkO1A4gd/QQoj2jB0VF4HAPAbUDygmqBfXbLlfxv1Zf1bYzC+oHlCtm+y9X8XlV
-        O0FU71FuF9q7iFIrx1CHh3O5gsyAchZlHJki5SxWfDiXK8gMKGdRxpEvL/70UicWZTzKGbrnoJwTLvQd
-        DCjjUc6jnBMa9K1dl5AdGmU7kBtQzrls0Aqy1eFGy4Osd+mgj56PXzl9o3oEeS80aN2JUQcHZFmS++qU
-        gc9PQf/edQ/iVahvpxxjhd2N7ySytxblWMAHnt0a3g3068nMKGexYuU7udDMS06OsTW2uPkqfw7oD5Va
-        OT6hAlLrL6RrOPXl1FWsXD0Fo1vD0z31gvC0EHtGD7PhqZfFiZk+7dZYD1V4I16Z7KzolGhMtp00FDgR
-        3lPspqbDzv+y1U4q/UUHgrfIP9/ZWh5+8xJ3r+6ioeB/Qstsd9GBG7y0uR8gK7jRSzkasMDGDtzw3s4G
-        LLBxADe+l8jGDBvJ6qoyBfol2Hgm/GvUhNltLzZGTL/RHPnjaTmLwMZZ8k3d+l+HbBH0BQP5OVv6B4za
-        XL7Cc0dMAAAAAElFTkSuQmCC
-</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="difficult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\difficult.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="easy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\easy.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="moderate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moderate.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>
