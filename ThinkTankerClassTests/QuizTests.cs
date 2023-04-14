@@ -1,4 +1,5 @@
-﻿using ThinkTankerClasses;
+﻿using ThinkTankerApp;
+using ThinkTankerClasses;
 
 namespace ThinkTankerClassTests
 {

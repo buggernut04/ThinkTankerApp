@@ -1,10 +1,10 @@
-namespace BrainProbe
+namespace ThinkTankerGUI.BrainProbe
 {
-    public partial class dashboardForm : Form
+    public partial class Dashboard : Form
     {
         int seconds;
         private bool isPaused;
-        public dashboardForm()
+        public Dashboard()
         {
             InitializeComponent();
             easyForm1.Visible = false;
@@ -238,6 +238,11 @@ namespace BrainProbe
         private void outBT_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            this.Owner.Hide();
         }
     }
 }

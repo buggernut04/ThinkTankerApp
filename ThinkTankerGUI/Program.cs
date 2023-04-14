@@ -30,7 +30,7 @@ namespace ThinkTankerGUI
             ProjectDatabase.SaveUserRecord();*/
 
 
-            Application.Run(new LogIn());
+            Application.Run(new MainMenu());
 
             //Application.Run(new MainMenu());
 

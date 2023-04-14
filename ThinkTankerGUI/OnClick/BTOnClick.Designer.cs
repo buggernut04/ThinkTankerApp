@@ -34,39 +34,43 @@
             // 
             // TOHB
             // 
-            TOHB.BackColor = Color.MediumSlateBlue;
-            TOHB.BackgroundColor = Color.MediumSlateBlue;
+            TOHB.BackColor = Color.FromArgb(251, 133, 0);
+            TOHB.BackgroundColor = Color.FromArgb(251, 133, 0);
             TOHB.BorderColor = Color.PaleVioletRed;
             TOHB.BorderRadius = 15;
             TOHB.BorderSize = 0;
             TOHB.FlatAppearance.BorderSize = 0;
             TOHB.FlatStyle = FlatStyle.Flat;
-            TOHB.ForeColor = Color.White;
+            TOHB.Font = new Font("Gill Sans MT", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            TOHB.ForeColor = Color.FromArgb(2, 48, 71);
             TOHB.Location = new Point(249, 316);
             TOHB.Name = "TOHB";
             TOHB.Size = new Size(277, 101);
             TOHB.TabIndex = 0;
-            TOHB.Text = "Towe of Hanoi";
-            TOHB.TextColor = Color.White;
+            TOHB.Text = "TOWER OF HANOI";
+            TOHB.TextColor = Color.FromArgb(2, 48, 71);
             TOHB.UseVisualStyleBackColor = false;
+            TOHB.Click += TOHB_Click;
             // 
             // MatchMB
             // 
-            MatchMB.BackColor = Color.MediumSlateBlue;
-            MatchMB.BackgroundColor = Color.MediumSlateBlue;
+            MatchMB.BackColor = Color.FromArgb(251, 133, 0);
+            MatchMB.BackgroundColor = Color.FromArgb(251, 133, 0);
             MatchMB.BorderColor = Color.PaleVioletRed;
             MatchMB.BorderRadius = 15;
             MatchMB.BorderSize = 0;
             MatchMB.FlatAppearance.BorderSize = 0;
             MatchMB.FlatStyle = FlatStyle.Flat;
-            MatchMB.ForeColor = Color.White;
+            MatchMB.Font = new Font("Gill Sans MT", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            MatchMB.ForeColor = Color.FromArgb(2, 48, 71);
             MatchMB.Location = new Point(720, 316);
             MatchMB.Name = "MatchMB";
             MatchMB.Size = new Size(277, 101);
             MatchMB.TabIndex = 1;
-            MatchMB.Text = "Matching Game";
-            MatchMB.TextColor = Color.White;
+            MatchMB.Text = "MATCHING GAME";
+            MatchMB.TextColor = Color.FromArgb(2, 48, 71);
             MatchMB.UseVisualStyleBackColor = false;
+            MatchMB.Click += MatchMB_Click;
             // 
             // BTOnClick
             // 

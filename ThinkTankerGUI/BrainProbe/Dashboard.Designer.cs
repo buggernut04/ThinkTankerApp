@@ -1,6 +1,9 @@
-﻿namespace BrainProbe
+﻿
+using BrainProbe;
+
+namespace ThinkTankerGUI.BrainProbe
 {
-    partial class dashboardForm
+    partial class Dashboard
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,8 +32,10 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboardForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             difficultBT = new Button();
             moderateBT = new Button();
             easyBT = new Button();
@@ -44,12 +49,10 @@
             difficultForm1 = new DifficultForm();
             quiztimer = new System.Windows.Forms.Timer(components);
             scoreForm1 = new ScoreForm();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -62,9 +65,32 @@
             panel1.Controls.Add(easyBT);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 830);
+            panel1.Size = new Size(219, 622);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(32, 456);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(160, 128);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(32, 9);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(163, 125);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
             // 
             // difficultBT
             // 
@@ -72,9 +98,10 @@
             difficultBT.FlatStyle = FlatStyle.Flat;
             difficultBT.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             difficultBT.ForeColor = SystemColors.ButtonHighlight;
-            difficultBT.Location = new Point(12, 462);
+            difficultBT.Location = new Point(10, 346);
+            difficultBT.Margin = new Padding(3, 2, 3, 2);
             difficultBT.Name = "difficultBT";
-            difficultBT.Size = new Size(224, 58);
+            difficultBT.Size = new Size(196, 44);
             difficultBT.TabIndex = 2;
             difficultBT.Text = "Difficult";
             difficultBT.UseVisualStyleBackColor = true;
@@ -86,9 +113,10 @@
             moderateBT.FlatStyle = FlatStyle.Flat;
             moderateBT.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             moderateBT.ForeColor = SystemColors.ButtonHighlight;
-            moderateBT.Location = new Point(12, 372);
+            moderateBT.Location = new Point(10, 279);
+            moderateBT.Margin = new Padding(3, 2, 3, 2);
             moderateBT.Name = "moderateBT";
-            moderateBT.Size = new Size(224, 58);
+            moderateBT.Size = new Size(196, 44);
             moderateBT.TabIndex = 2;
             moderateBT.Text = "Moderate";
             moderateBT.UseVisualStyleBackColor = true;
@@ -100,9 +128,10 @@
             easyBT.FlatStyle = FlatStyle.Flat;
             easyBT.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             easyBT.ForeColor = SystemColors.ButtonHighlight;
-            easyBT.Location = new Point(12, 279);
+            easyBT.Location = new Point(10, 209);
+            easyBT.Margin = new Padding(3, 2, 3, 2);
             easyBT.Name = "easyBT";
-            easyBT.Size = new Size(224, 58);
+            easyBT.Size = new Size(196, 44);
             easyBT.TabIndex = 2;
             easyBT.Text = "Easy";
             easyBT.UseVisualStyleBackColor = true;
@@ -110,15 +139,16 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(2, 60, 71);
+            panel2.BackColor = Color.FromArgb(2, 48, 71);
             panel2.Controls.Add(outBT);
             panel2.Controls.Add(exitBT);
             panel2.Controls.Add(timerLabel);
             panel2.Controls.Add(pauseBT);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(250, 0);
+            panel2.Location = new Point(219, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1038, 65);
+            panel2.Size = new Size(908, 49);
             panel2.TabIndex = 1;
             // 
             // outBT
@@ -128,9 +158,10 @@
             outBT.FlatStyle = FlatStyle.Flat;
             outBT.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             outBT.ForeColor = SystemColors.ButtonHighlight;
-            outBT.Location = new Point(992, 17);
+            outBT.Location = new Point(868, 13);
+            outBT.Margin = new Padding(3, 2, 3, 2);
             outBT.Name = "outBT";
-            outBT.Size = new Size(34, 32);
+            outBT.Size = new Size(30, 24);
             outBT.TabIndex = 2;
             outBT.Text = "X";
             outBT.UseVisualStyleBackColor = true;
@@ -143,9 +174,10 @@
             exitBT.FlatStyle = FlatStyle.Flat;
             exitBT.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
             exitBT.ForeColor = SystemColors.ButtonHighlight;
-            exitBT.Location = new Point(15, 10);
+            exitBT.Location = new Point(13, 8);
+            exitBT.Margin = new Padding(3, 2, 3, 2);
             exitBT.Name = "exitBT";
-            exitBT.Size = new Size(96, 39);
+            exitBT.Size = new Size(84, 29);
             exitBT.TabIndex = 1;
             exitBT.Text = "Exit";
             exitBT.TextAlign = ContentAlignment.TopCenter;
@@ -156,9 +188,9 @@
             // 
             timerLabel.Font = new Font("Segoe UI Black", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             timerLabel.ForeColor = SystemColors.ButtonHighlight;
-            timerLabel.Location = new Point(846, 17);
+            timerLabel.Location = new Point(740, 13);
             timerLabel.Name = "timerLabel";
-            timerLabel.Size = new Size(77, 31);
+            timerLabel.Size = new Size(67, 23);
             timerLabel.TabIndex = 1;
             timerLabel.Text = "00:00";
             // 
@@ -169,9 +201,10 @@
             pauseBT.FlatStyle = FlatStyle.Flat;
             pauseBT.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             pauseBT.ForeColor = SystemColors.ButtonHighlight;
-            pauseBT.Location = new Point(932, 12);
+            pauseBT.Location = new Point(816, 9);
+            pauseBT.Margin = new Padding(3, 2, 3, 2);
             pauseBT.Name = "pauseBT";
-            pauseBT.Size = new Size(94, 36);
+            pauseBT.Size = new Size(82, 27);
             pauseBT.TabIndex = 0;
             pauseBT.Text = "Pause";
             pauseBT.UseVisualStyleBackColor = true;
@@ -181,25 +214,28 @@
             // 
             easyForm1.AutoValidate = AutoValidate.EnablePreventFocusChange;
             easyForm1.easyForm_isOpen = false;
-            easyForm1.Location = new Point(265, 169);
+            easyForm1.Location = new Point(232, 127);
+            easyForm1.Margin = new Padding(3, 2, 3, 2);
             easyForm1.Name = "easyForm1";
-            easyForm1.Size = new Size(1248, 675);
+            easyForm1.Size = new Size(1092, 506);
             easyForm1.TabIndex = 2;
             // 
             // moderateForm1
             // 
-            moderateForm1.Location = new Point(265, 169);
+            moderateForm1.Location = new Point(232, 127);
+            moderateForm1.Margin = new Padding(3, 2, 3, 2);
             moderateForm1.moderateForm_isOpen = false;
             moderateForm1.Name = "moderateForm1";
-            moderateForm1.Size = new Size(1248, 675);
+            moderateForm1.Size = new Size(1092, 506);
             moderateForm1.TabIndex = 3;
             // 
             // difficultForm1
             // 
             difficultForm1.difficult_isOpen = false;
-            difficultForm1.Location = new Point(265, 169);
+            difficultForm1.Location = new Point(232, 127);
+            difficultForm1.Margin = new Padding(3, 2, 3, 2);
             difficultForm1.Name = "difficultForm1";
-            difficultForm1.Size = new Size(1248, 675);
+            difficultForm1.Size = new Size(1092, 506);
             difficultForm1.TabIndex = 4;
             // 
             // quiztimer
@@ -211,37 +247,18 @@
             // scoreForm1
             // 
             scoreForm1.BackColor = Color.Transparent;
-            scoreForm1.Location = new Point(315, 107);
+            scoreForm1.Location = new Point(276, 80);
+            scoreForm1.Margin = new Padding(3, 2, 3, 2);
             scoreForm1.Name = "scoreForm1";
-            scoreForm1.Size = new Size(1152, 671);
+            scoreForm1.Size = new Size(1008, 503);
             scoreForm1.TabIndex = 5;
             // 
-            // pictureBox1
+            // Dashboard
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(36, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(186, 167);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(36, 608);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(183, 170);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
-            // 
-            // dashboardForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 133, 0);
-            ClientSize = new Size(1288, 830);
+            ClientSize = new Size(1127, 622);
             Controls.Add(difficultForm1);
             Controls.Add(moderateForm1);
             Controls.Add(easyForm1);
@@ -249,15 +266,17 @@
             Controls.Add(panel1);
             Controls.Add(scoreForm1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "dashboardForm";
+            Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Category";
+            Load += Dashboard_Load;
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 

@@ -9,18 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.TowerOfHanoi;
-using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.MatchingGame;
+using ThinkTankerGUI.BrainProbe;
+using ThinkTankerGUI.LogInForm;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
 
     public partial class MainMenu : Form
     {
+        public static LogIn logIn = new LogIn();
         public static Form1 matchGame = new();
-        public static dashboardForm dashBoardForm = new();
+        public static Dashboard dashBoardForm = new();
         public static BTOnClick BTC = new();
-        public static BPOnClick BPC = new();
+        //public static BPOnClick BPC = new();
 
         public MainMenu()
         {
@@ -37,7 +39,7 @@ namespace ThinkTankerGUI.MainMenuForm
             this.ShowDialog();
         }
 
-        private void BrainTeasersB_MouseHover(object sender, EventArgs e)
+        private void BrainTeasersB_MouseHover_1(object sender, EventArgs e)
         {
             //Hover Text
             hoverTxt.Text = "A series of minigames\n to practice your \n problem solving skills!";
@@ -45,14 +47,17 @@ namespace ThinkTankerGUI.MainMenuForm
             hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
             hoverTxt.ForeColor = Color.PeachPuff;
             hoverTxt.Location = new Point(601, 268);
+
         }
-        private void BrainTeasersB_MouseLeave(object sender, EventArgs e)
+
+        private void BrainTeasersB_MouseLeave_1(object sender, EventArgs e)
         {
             hoverTxt.Text = "";
         }
+
         private void BrainProbeB_Click(object sender, EventArgs e)
         {
-            MainMenu.BPC.ShowDialog(this);
+            MainMenu.dashBoardForm.ShowDialog(this);
             this.ShowDialog();
         }
         private void BrainProbeB_MouseHover(object sender, EventArgs e)
@@ -67,6 +72,13 @@ namespace ThinkTankerGUI.MainMenuForm
         private void BrainProbeB_MouseLeave(object sender, EventArgs e)
         {
             hoverTxt.Text = "";
+        }
+
+        private void ExitB_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu.logIn.ShowDialog(this);
+            this.Show();
         }
     }
 }

@@ -91,11 +91,15 @@
             pictureboxCus1.BorderColor2 = Color.HotPink;
             pictureboxCus1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             pictureboxCus1.BorderSize = 0;
+            pictureboxCus1.ErrorImage = null;
             pictureboxCus1.GradientAngle = 50F;
+            pictureboxCus1.Image = (Image)resources.GetObject("pictureboxCus1.Image");
+            pictureboxCus1.ImageLocation = "";
+            pictureboxCus1.InitialImage = null;
             pictureboxCus1.Location = new Point(46, 58);
             pictureboxCus1.Name = "pictureboxCus1";
             pictureboxCus1.Size = new Size(99, 99);
-            pictureboxCus1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureboxCus1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureboxCus1.TabIndex = 0;
             pictureboxCus1.TabStop = false;
             // 
@@ -117,6 +121,7 @@
             ExitB.TabIndex = 2;
             ExitB.TextColor = Color.White;
             ExitB.UseVisualStyleBackColor = false;
+            ExitB.Click += ExitB_Click;
             // 
             // BrainProbeB
             // 
@@ -139,7 +144,6 @@
             BrainProbeB.Click += BrainProbeB_Click;
             BrainProbeB.MouseLeave += BrainProbeB_MouseLeave;
             BrainProbeB.MouseHover += BrainProbeB_MouseHover;
-
             // 
             // BrainTeasersB
             // 
@@ -160,7 +164,8 @@
             BrainTeasersB.TextColor = Color.FromArgb(251, 133, 0);
             BrainTeasersB.UseVisualStyleBackColor = false;
             BrainTeasersB.Click += BrainTeasersB_Click;
-
+            BrainTeasersB.MouseLeave += BrainTeasersB_MouseLeave_1;
+            BrainTeasersB.MouseHover += BrainTeasersB_MouseHover_1;
             // 
             // hoverTxt
             // 
