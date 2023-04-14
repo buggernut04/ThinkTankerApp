@@ -11,7 +11,6 @@ using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.TowerOfHanoi;
 using ThinkTankerGUI.OnClick;
 using ThinkTankerGUI.MatchingGame;
-using BrainProbe;
 
 namespace ThinkTankerGUI.MainMenuForm
 {
