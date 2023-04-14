@@ -111,9 +111,9 @@ namespace ThinkTankerGUI.MatchingGame
         }
         private void Tags(int index)
         {
-            if (index < 0)
+            if(index < 0)
             {
-                return;
+                return;  
             }
 
             switch (index)
@@ -351,11 +351,6 @@ namespace ThinkTankerGUI.MatchingGame
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void extbttn_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using ThinkTankerApp;
 using ThinkTankerClasses;
 
-namespace BrainProbe
+namespace ThinkTankerGUI.BrainProbe
 {
     public partial class ModerateForm : UserControl
     {
