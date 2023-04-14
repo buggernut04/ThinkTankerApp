@@ -26,8 +26,8 @@ namespace ThinkTankerGUI
             ProjectDatabase.LoadUserRecord();
 
 
-            ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "buggernut04", "Gwapoko-123"));
-            ProjectDatabase.SaveUserRecord();
+          /*  ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "buggernut04", "Gwapoko-123"));
+            ProjectDatabase.SaveUserRecord();*/
 
 
             Application.Run(new LogIn());
