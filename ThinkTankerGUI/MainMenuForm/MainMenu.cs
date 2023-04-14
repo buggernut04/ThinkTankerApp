@@ -27,6 +27,8 @@ namespace ThinkTankerGUI.MainMenuForm
         public MainMenu()
         {
             InitializeComponent();
+            buttonCus1.Visible = false;
+            buttonCus2.Visible = false;
         }
         private void MainMenu_Load(object sender, EventArgs e)
         {
@@ -35,8 +37,11 @@ namespace ThinkTankerGUI.MainMenuForm
 
         private void BrainTeasersB_Click(object sender, EventArgs e)
         {
-            MainMenu.BTC.ShowDialog(this);
-            this.ShowDialog();
+            
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            buttonCus1.Visible = true;
+            buttonCus2.Visible = true;
         }
 
         private void BrainTeasersB_MouseHover_1(object sender, EventArgs e)
@@ -60,18 +65,24 @@ namespace ThinkTankerGUI.MainMenuForm
             MainMenu.dashBoardForm.ShowDialog(this);
             this.ShowDialog();
         }
-        private void BrainProbeB_MouseHover(object sender, EventArgs e)
+
+        private void buttonCus1_Click(object sender, EventArgs e)
         {
-            hoverTxt.Text = "Test your knowledge\n with our quizes \n of various difficulties!";
-            hoverTxt.TextAlign = ContentAlignment.MiddleCenter;
-            hoverTxt.Font = new Font("Gill Sans MT", 40F, FontStyle.Regular, GraphicsUnit.Point);
-            hoverTxt.ForeColor = Color.PeachPuff;
-            hoverTxt.Location = new Point(601, 268);
+            this.Hide();
+            MainMenu.toh.ShowDialog(this);
+            this.Show();
+            buttonCus1.Visible = false;
+            buttonCus2.Visible = false;
+
         }
 
-        private void BrainProbeB_MouseLeave(object sender, EventArgs e)
+        private void buttonCus2_Click(object sender, EventArgs e)
         {
-            hoverTxt.Text = "";
+            this.Hide();
+            MainMenu.matchGame.ShowDialog(this);
+            this.Show();
+            buttonCus1.Visible = false;
+            buttonCus2.Visible = false;
         }
 
         private void ExitB_Click(object sender, EventArgs e)
