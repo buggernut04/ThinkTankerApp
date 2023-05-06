@@ -80,7 +80,7 @@
             userNameTB.PlaceholderColor = Color.DarkGray;
             userNameTB.PlaceholderText = "Username";
             userNameTB.Size = new Size(500, 36);
-            userNameTB.TabIndex = 1;
+            userNameTB.TabIndex = 2;
             userNameTB.UnderlinedStyle = true;
             // 
             // passwordTB
@@ -100,7 +100,7 @@
             passwordTB.PlaceholderColor = Color.DarkGray;
             passwordTB.PlaceholderText = "Password";
             passwordTB.Size = new Size(500, 36);
-            passwordTB.TabIndex = 2;
+            passwordTB.TabIndex = 5;
             passwordTB.UnderlinedStyle = true;
             // 
             // conpasswordTB
@@ -120,7 +120,7 @@
             conpasswordTB.PlaceholderColor = Color.DarkGray;
             conpasswordTB.PlaceholderText = "Confirm Password";
             conpasswordTB.Size = new Size(500, 36);
-            conpasswordTB.TabIndex = 3;
+            conpasswordTB.TabIndex = 6;
             conpasswordTB.UnderlinedStyle = true;
             // 
             // signUp_button
@@ -137,7 +137,7 @@
             signUp_button.Location = new Point(455, 623);
             signUp_button.Name = "signUp_button";
             signUp_button.Size = new Size(497, 37);
-            signUp_button.TabIndex = 4;
+            signUp_button.TabIndex = 7;
             signUp_button.Text = "Sign Up!";
             signUp_button.TextColor = Color.White;
             signUp_button.UseVisualStyleBackColor = false;
@@ -160,7 +160,7 @@
             nameTB.PlaceholderColor = Color.DarkGray;
             nameTB.PlaceholderText = "Name";
             nameTB.Size = new Size(497, 36);
-            nameTB.TabIndex = 5;
+            nameTB.TabIndex = 1;
             nameTB.UnderlinedStyle = true;
             // 
             // birthDatePicker
@@ -175,7 +175,7 @@
             birthDatePicker.Location = new Point(455, 374);
             birthDatePicker.Name = "birthDatePicker";
             birthDatePicker.Size = new Size(227, 29);
-            birthDatePicker.TabIndex = 6;
+            birthDatePicker.TabIndex = 3;
             // 
             // sexBttn
             // 
@@ -189,7 +189,7 @@
             sexBttn.Location = new Point(742, 374);
             sexBttn.Name = "sexBttn";
             sexBttn.Size = new Size(213, 25);
-            sexBttn.TabIndex = 7;
+            sexBttn.TabIndex = 4;
             // 
             // label2
             // 

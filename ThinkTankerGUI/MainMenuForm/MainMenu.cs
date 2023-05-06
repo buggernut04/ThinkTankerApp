@@ -19,6 +19,8 @@ namespace ThinkTankerGUI.MainMenuForm
         public static Form1 matchGame = new();
         public static dashboardForm dashBoardForm = new();
         public static TowerOfHanoiBT toh = new();
+
+        public event EventHandler formClosed;
         public MainMenu()
         {
             InitializeComponent();
@@ -41,7 +43,8 @@ namespace ThinkTankerGUI.MainMenuForm
 
         private void ExitB_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            formClosed?.Invoke(sender, e);
         }
 
         private void BrainProbeB_Click(object sender, EventArgs e)

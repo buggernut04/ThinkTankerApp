@@ -20,12 +20,17 @@ namespace ThinkTankerGUI.LogInForm
     {
         public static MainMenu mainMenu = new();
         public static SignUp signUp = new();
-        //public static User user = new();
         public LogIn()
         {
             InitializeComponent();
             this.AcceptButton = signInB;
             this.FormClosing += LogIn_FormClosing;
+            mainMenu.formClosed += MainMenu_formClosed;
+        }
+
+        private void MainMenu_formClosed(object? sender, EventArgs e)
+        {
+            this.Show();
         }
 
         private void LogIn_FormClosing(object? sender, FormClosingEventArgs e)
@@ -44,33 +49,23 @@ namespace ThinkTankerGUI.LogInForm
         }
         private void signInB_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            LogIn.mainMenu.ShowDialog(this);
-            this.Show();
+            bool successfulLogin = false;
+            
+            foreach(var u in ProjectDatabase.UserList())
+            {
+                if(u.CanLogIn(usernameTB.Text, passwordTB.Text))
+                {
+                    this.Hide();
+                    successfulLogin = true;
+                    mainMenu.Show();
+                    break;
+                }
+            }
 
-            /* bool canLogin = false;
-
-             foreach (var u in )
-             {
-                 if (u.CanLogIn(usernameTB.Text, passwordTB.Text))
-                 {
-                     // creation partial database
-
-                     this.Hide();
-                     LogIn.mainMenu.ShowDialog(this);
-                     this.Show();
-                     canLogin = true;
-                     break;
-                 }
-             }
-
-             if (!canLogin)
-                 MessageBox.Show("Invalid Username and Password!");*/
-
-
-            /* this.Hide();
-             LogIn.mainMenu.ShowDialog(this);
-             this.Show();*/
+            if(!successfulLogin)
+            {
+                MessageBox.Show("Invalid Username or Password!");
+            }
         }
 
 

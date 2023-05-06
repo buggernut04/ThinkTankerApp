@@ -25,9 +25,10 @@ namespace ThinkTankerClasses
 
             //ProjectDatabase.UserRecord.Add(new User("Michael Cye R. Salem", DateTime.Now, 'M', "buggernut04", "gwapoko123"));
 
-            ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "whatsup123", "ILOVEYOU123_"));
+            //ProjectDatabase.UserRecord.Add(new("Salem", DateTime.Now, 'M', "whatsup123", "ILOVEYOU123_"));
 
-            ProjectDatabase.SaveUserRecord();
+            //ProjectDatabase.Init();
+            //ProjectDatabase.SaveUserRecord();
 
             //ProjectDatabase.SaveUserRecord();
 

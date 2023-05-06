@@ -29,7 +29,7 @@ namespace ThinkTankerClasses
             return Username.Equals(username) && Password.Equals(password);
         }
 
-        public bool IsValidPassword(string password)
+        public static bool IsValidPassword(string password)
         {
             // Password must be at least 8 characters long
             // Password must contain at least one uppercase letter

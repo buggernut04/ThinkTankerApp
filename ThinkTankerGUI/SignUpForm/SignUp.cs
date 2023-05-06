@@ -16,7 +16,7 @@ namespace ThinkTankerGUI.SignUpForm
     public partial class SignUp : Form
     {
         public static LogIn logIn = new();
-        public static User? NewUser = null;
+
         public SignUp()
         {
             InitializeComponent();
@@ -32,14 +32,17 @@ namespace ThinkTankerGUI.SignUpForm
 
         private void signUp_button_Click(object sender, EventArgs e)
         {
-
-            NewUser = new User(nameTB.Text, birthDatePicker.Value, 'M', userNameTB.Text, passwordTB.Text);
-
-            if (NewUser.Name.Equals(""))
+            if (string.IsNullOrEmpty(nameTB.Text))
+            {
                 MessageBox.Show("Name is a required field!");
-            else if (NewUser.Username.Equals(""))
+
+            }
+            else if (string.IsNullOrEmpty(userNameTB.Text))
+            {
                 MessageBox.Show("Username is a required field!");
-            else if (!NewUser.IsValidPassword(passwordTB.Text))
+
+            }
+            else if (!User.IsValidPassword(passwordTB.Text))
             {
                 MessageBox.Show("Invalid Password Credentials!\n-Password must be at least 8 characters long\n-Contain at least one uppercase letter\n-Contain at least one lowercase letter\n-Contain at least one digit\n-Contain at least one special character\r");
                 passwordTB.Text = passwordTB.Text.Substring(0, passwordTB.Text.Length - passwordTB.Text.Length);
@@ -52,13 +55,13 @@ namespace ThinkTankerGUI.SignUpForm
             }
             else
             {
-                /*ProjectDatabase.UserRecord.Add(NewUser);
-
-                ProjectDatabase.SaveUserRecord();*/
-                MessageBox.Show("Successfully Created Account!");
-
+                ProjectDatabase.UserRecord.Add(new User(nameTB.Text, birthDatePicker.Value, 'M', userNameTB.Text, passwordTB.Text));
+                ProjectDatabase.SaveUserRecord();
+                MessageBox.Show("Successfully Created");
                 this.Close();
             }
+
+
         }
     }
 }
